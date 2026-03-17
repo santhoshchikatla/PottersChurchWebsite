@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <title>@ViewBag.Title</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Potters Church</title>
+
+    <!-- FONTS: Adobe Typekit (neue-haas-grotesk) replaced with closest Google Font alternative -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Barlow Condensed / Barlow replaces Neue Haas Grotesk (similar grotesque sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&family=Barlow+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 Free (replaces WordPress font-awesome 4.x) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Magnific Popup (same library, public CDN) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+	<link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <!-- ══ SEARCH OVERLAY ══ -->
+    <div id="search-overlay">
+        <button id="search-close" aria-label="Close Search">
+            <span></span><span></span>
+        </button>
+        <div class="search-inner">
+            <form action="#" method="GET">
+                <input type="text" name="s" placeholder="Search" aria-label="Search" autofocus>
+                <p class="search-hint">Hit enter to search or ESC to close</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- ══ HEADER ══ -->
+    <div id="header-outer">
+        <div class="header-inner">
+            <a id="logo" href="@Url.Action("index","Home")">
+                <img class="logo-white" src="~/images/logo.png" alt="The Potters Church" height="50">
+			</a>
+			
+            <button class="hamburger-btn" id="ocm-toggle" aria-label="Navigation Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- ══ SLIDE-OUT OFF-CANVAS MENU ══ -->
+    <div id="slide-out-widget-area-bg"></div>
+    <div id="slide-out-widget-area" role="dialog" aria-modal="true" aria-label="Off Canvas Menu">
+        <div class="inner-wrap">
+            <button class="ocm-close" id="ocm-close" aria-label="Close Menu">
+                <span></span><span></span>
+            </button>
+            <div class="off-canvas-menu-container" role="navigation">
+                <ul>
+                    <li><a href="#">Sundays</a></li>
+                    <li><a href="#">Groups</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Teaching</a></li>
+                    <li><a href="#">Formation</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Give</a></li>
+                </ul>
+            </div>
+            <div class="ocm-bottom-meta">
+                <p>
+                    <strong>Sundays at 8:00a &amp; 10:30a</strong><br>
+                        <a href="https://maps.app.goo.gl/cKBbq8Tr2CbMQGUc8">KPHB,Hyderabad</a>
+                </p>
+                <ul class="off-canvas-social-links">
+                        <li><a href="https://www.facebook.com/tvforchrist" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.youtube.com/@@Potterschurchmedia" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/potterschurchmedia/#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    @RenderBody()
+    
+
+    <footer id="footer-outer" role="contentinfo">
+        <div id="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <!-- About Us -->
+                    <div class="footer-col">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="#">Our Vision</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Our Beliefs</a></li>
+                            <li><a href="#">PCC Kids</a></li>
+                            <li><a href="#">PCC YTH</a></li>
+                        </ul>
+                    </div>
+                    <!-- Next Steps -->
+                    <div class="footer-col">
+                        <h4>Next Steps</h4>
+                        <ul>
+                            <li><a href="#">Plan Your Visit</a></li>
+                            <li><a href="#" target="_blank">Start Here Class</a></li>
+                            <li><a href="#" target="_blank">Stay Here Form</a></li>
+                            <li><a href="#">Get Baptized</a></li>
+                        </ul>
+                    </div>
+                    <!-- Watch & Listen -->
+                    <div class="footer-col">
+                        <h4>Watch &amp; Listen</h4>
+                        <ul>
+                            <li><a href="https://formedbyjesus.com" target="_blank">Formed by Jesus</a></li>
+                            <li><a href="https://passioncreek.church/teaching/">Teaching</a></li>
+                            <li><a href="https://www.youtube.com/passioncreekchurch" target="_blank">YouTube Page</a></li>
+                        </ul>
+                    </div>
+                    <!-- Service Times & Location -->
+                    <div class="footer-col">
+                        <h4>Service Times &amp; Location</h4>
+                        <p>
+                            Sundays at 8:00a &amp; 10:30a<br>
+                                <a href="https://maps.app.goo.gl/cKBbq8Tr2CbMQGUc8" target="_blank" rel="noopener">
+                                    KPHB 5th Phase, Kukatpally Housing Board Colony<br>
+                                    Hyderabad, Telangana 500072
+                            </a>
+                        </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="footer-year"></span> The Potter's Church. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ══ SCRIPTS ══ -->
+    <!-- jQuery (replaces wp-includes jQuery) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Magnific Popup (replaces WordPress magnific.js) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        (function($) {
+        "use strict";
+
+        /* ── footer year ── */
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+        /* ── sticky header ── */
+        const headerOuter = document.getElementById('header-outer');
+        window.addEventListener('scroll', function() {
+        if (window.scrollY > 60) {
+        headerOuter.classList.add('scrolled');
+        } else {
+        headerOuter.classList.remove('scrolled');
+        }
+        }, { passive: true });
+
+        /* ── off-canvas menu ── */
+        const ocmToggle = document.getElementById('ocm-toggle');
+        const ocmClose  = document.getElementById('ocm-close');
+        const ocmPanel  = document.getElementById('slide-out-widget-area');
+        const ocmBg     = document.getElementById('slide-out-widget-area-bg');
+
+        function openOCM() {
+        ocmPanel.classList.add('open');
+        ocmBg.classList.add('visible');
+        document.body.style.overflow = 'hidden';
+        ocmToggle.setAttribute('aria-expanded', 'true');
+        }
+        function closeOCM() {
+        ocmPanel.classList.remove('open');
+        ocmBg.classList.remove('visible');
+        document.body.style.overflow = '';
+        ocmToggle.setAttribute('aria-expanded', 'false');
+        }
+        ocmToggle.addEventListener('click', openOCM);
+        ocmClose.addEventListener('click', closeOCM);
+        ocmBg.addEventListener('click', closeOCM);
+        document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeOCM();
+        });
+
+        /* ── accordion toggles ── */
+        document.querySelectorAll('.toggle-heading').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+        const item = btn.closest('.toggle-item');
+        const isOpen = item.classList.contains('open');
+
+        // close all
+        document.querySelectorAll('.toggle-item').forEach(function(t) {
+        t.classList.remove('open');
+        t.querySelector('.toggle-heading').setAttribute('aria-expanded', 'false');
+        });
+
+        // open clicked if was closed
+        if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        }
+        });
+        });
+
+        /* ── video lightbox (Magnific Popup) ── */
+        // attach to video-box click
+        document.querySelectorAll('.nectar-video-box').forEach(function(box) {
+        box.addEventListener('click', function() {
+        var url = box.getAttribute('data-video');
+        if (!url) return;
+        // convert youtube watch url to embed
+        var embedUrl = url
+        .replace('youtu.be/', 'www.youtube.com/embed/')
+        .replace('watch?v=', 'embed/')
+        .split('?si=')[0]
+        .split('&')[0];
+        embedUrl += '?autoplay=1&rel=0';
+
+        $.magnificPopup.open({
+        items: { src: embedUrl },
+        type: 'iframe',
+        iframe: {
+        markup: '<div class="mfp-iframe-scaler">' +
+        '<div class="mfp-close"></div>' +
+        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen allow="autoplay"></iframe>' +
+        '</div>',
+        patterns: { youtube: { index: 'youtube.com/embed/', id: null, src: '%id%' } },
+        srcAction: 'iframe_src'
+        }
+        });
+        });
+        });
+
+        /* ── search overlay ── */
+        const searchOverlay = document.getElementById('search-overlay');
+        const searchCloseBtn = document.getElementById('search-close');
+
+        // open on some trigger if desired (no search button in this nav —
+        // but ESC still closes)
+        searchCloseBtn.addEventListener('click', function() {
+        searchOverlay.classList.remove('active');
+        });
+        document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
+        searchOverlay.classList.remove('active');
+        }
+        });
+
+        /* ── mobile page submenu toggle ── */
+        const submenuToggle = document.getElementById('submenu-toggle');
+        const submenuList   = document.getElementById('submenu-list');
+        if (submenuToggle) {
+        submenuToggle.addEventListener('click', function() {
+        const expanded = submenuToggle.getAttribute('aria-expanded') === 'true';
+        submenuToggle.setAttribute('aria-expanded', !expanded);
+        submenuList.classList.toggle('open', !expanded);
+        });
+        // close on link click
+        submenuList.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+        submenuList.classList.remove('open');
+        submenuToggle.setAttribute('aria-expanded', 'false');
+        });
+        });
+        }
+
+        /* ── scroll-spy: active submenu item ── */
+        const sections = ['new', 'sundays', 'groups', 'practices', 'events'];
+        const subLinks = document.querySelectorAll('.page-submenu ul li a');
+        window.addEventListener('scroll', function() {
+        let current = '';
+        sections.forEach(function(id) {
+        const el = document.getElementById(id);
+        if (el && window.scrollY >= el.offsetTop - 120) {
+        current = id;
+        }
+        });
+        subLinks.forEach(function(link) {
+        link.style.background = '';
+        link.style.fontWeight = '700';
+        if (link.getAttribute('href') === '#' + current) {
+        link.style.background = 'rgba(0,0,0,0.2)';
+        }
+        });
+        }, { passive: true });
+
+        /* ── scroll animations (IntersectionObserver) ── */
+        const fadeEls = document.querySelectorAll('.fade-in-up');
+        if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+        }
+        });
+        }, { threshold: 0.12 });
+        fadeEls.forEach(function(el) { observer.observe(el); });
+        } else {
+        fadeEls.forEach(function(el) { el.classList.add('in-view'); });
+        }
+
+        /* ── animated title label reveal on scroll ── */
+        const animTitles = document.querySelectorAll('.nectar-animated-title');
+        if ('IntersectionObserver' in window) {
+        const titleObs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        titleObs.unobserve(entry.target);
+        }
+        });
+        }, { threshold: 0.3 });
+        animTitles.forEach(function(el) { titleObs.observe(el); });
+        }
+
+        /* ── smooth scroll for submenu anchors ── */
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+        var target = document.querySelector(anchor.getAttribute('href'));
+        if (target) {
+        e.preventDefault();
+        var offset = target.getBoundingClientRect().top + window.scrollY - 52;
+        window.scrollTo({ top: offset, behavior: 'smooth' });
+        }
+        });
+        });
+
+        /* ── mobile: fix hero min-height for address bar ── */
+        function setVh() {
+        var vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', vh + 'px');
+        }
+        setVh();
+        window.addEventListener('resize', setVh, { passive: true });
+
+        })(jQuery);
+    </script>
+
+    <!-- Reftagger (Bible verse tagging — same third-party script, no WP dependency) -->
+    <script>
+        var refTagger = {
+        settings: {
+        bibleVersion: "CSB",
+        addLogosLink: false,
+        appendIconToLibLinks: false,
+        noSearchTagNames: ["h1","h2","h3"],
+        useTooltip: true,
+        linksOpenNewWindow: true,
+        convertHyperlinks: false,
+        caseInsensitive: true,
+        tagChapters: false
+        }
+        };
+        (function(d,t){
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src='https://api.reftagger.com/v2/reftagger.js';
+        s.parentNode.insertBefore(g,s);
+        }(document,'script'));
+
+        $(document).ready(function(){
+            let slides = document.querySelectorAll(".slide");
+            let index = 0;
+
+            setInterval(() => {
+            slides[index].classList.remove("active");
+            index = (index + 1) % slides.length;
+            slides[index].classList.add("active");
+            }, 4000);
+        } );
+            
+
+    </script>
+</body>
+</html>
