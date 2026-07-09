@@ -11,6 +11,31 @@ namespace PottersChurch.Controllers
             return View();
         }
 
+        public IActionResult Welcome()
+        {
+            return View();
+        }
+        public IActionResult PrayerRequest()
+        {
+            return View();
+        }
+
+        public IActionResult Sundays()
+        {
+            return View();
+        }
+        public IActionResult EventsRegistration()
+        {
+            return View();
+        }
+        public IActionResult BibleStudies()
+        {
+            return View();
+        }
+        public IActionResult About()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

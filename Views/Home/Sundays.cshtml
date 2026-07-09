@@ -1,0 +1,260 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+    Layout = "~/Views/Shared/_HeaderLayout.cshtml";
+}
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+<link href="~/css/sunday.css" rel="stylesheet" />
+<style>
+    .ytmVideoCoverThumbnail{
+        background-image: url('../images/welcomethumnail.png') !important;
+    }
+   /*  .hero
+    {
+        background-image: url('images\sundaybackground.png');
+
+    } */
+    .hero-bg {
+    position: absolute;
+    inset: 0;
+        background-image: url('../images/sundaybackground.png') !important;
+    opacity: 0.8;
+}
+</style>
+
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+        <p class="hero-eyebrow">Welcome Home</p>
+        <h1>You Belong<br>Here</h1>
+        <div class="hero-time">Sundays at 8:00am , 10:30am & 6:00pm</div>
+        <p class="hero-sub"> The Potters Church &nbsp;·&nbsp; Hyderabad Telangana<br>We're so glad you found us — come as you are.</p>
+   
+    </div>
+    <div class="scroll-hint">
+        <span>Explore</span>
+        <div class="scroll-arrow"></div>
+    </div>
+</section>
+
+<!-- STICKY SUB-NAV -->
+<div class="subnav">
+    <a href="#location" class="active">Location &amp; Time</a>
+    <a href="#kids">Kids</a>
+    <a href="#youth">Youth</a>
+    
+</div>
+
+<!-- LOCATION -->
+<div style="background: var(--off-white);">
+    <div id="location" style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:80px 40px;">
+        <div>
+            <span class="section-label">Location &amp; Time</span>
+            <h2 class="section-title">Sundays at<br> 8:00am , 10:30am & 6:00pm</h2>
+            <div class="red-divider"></div>
+            <div class="address-block">
+                <strong>The Potters Church</strong>
+                KPHB 5th Phase, Kukatpally Housing Board Colony<br>
+                Hyderabad, Telangana 500072
+            </div>
+            <p style="font-size:16px;line-height:1.8;color:var(--text-muted);margin-bottom:28px;">
+                We meet at Potters church every Sunday. Doors open 15 minutes before each service — plenty of time to grab coffee, check in your kids, and find a great seat.
+            </p>
+            <a href="https://maps.app.goo.gl/cKBbq8Tr2CbMQGUc8" class="btn-primary" style="font-size:12px;">Get Directions</a>
+        </div>
+        <div>
+            <img class="location-img"
+                 src="~/images/church_cinematic_edit_v2.jpg"
+                 alt="Grace Community Church gathering" />
+        </div>
+    </div>
+</div>
+
+<!-- VIDEO WALKTHROUGH -->
+<div class="video-section">
+    <span class="section-label" style="color:var(--red);">See What to Expect</span>
+    <h2 class="section-title light">Watch Our Service Walkthrough</h2>
+    <p>Get a feel for what a Sunday at Grace Community looks like before you arrive.</p>
+    @* <div style="background-image: url('../images/welcomethumnail.png');" class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/wy4_ljLM1MY?si=fx_hd_nnUDfTPRKV"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                title="Service Walkthrough"></iframe>
+    </div> *@
+
+    <a class="video-wrap" target="_blank" href="https://www.youtube.com/watch?v=bjcLdgfSiMo">
+                            
+        <img src="https://img.youtube.com/vi/bjcLdgfSiMo/maxresdefault.jpg" style="max-width: 58%;
+        margin: auto;width: 49%;"
+             alt="Plan Your Visit" />
+									
+        <div style="justify-content: flex-start" class="play-btn-overlay">
+            <div class="play-btn">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+            </div>
+        </div>
+    </a>
+    
+
+</div>
+
+
+
+
+<!-- KIDS -->
+<div id="kids">
+    <!-- Logo area -->
+    <div style="background: #ffff; "class="kids-logo-area">
+        <img src="~/images/kidschurchphoto.png" alt="potters church" class="kids-logo-img" />
+       
+    </div>
+
+    <!-- Three colored columns -->
+    <div class="kids-columns">
+        <!-- Lavender — Infants & Toddlers -->
+        <div class="kid-col lavender">
+            <h3>Infants &amp; Toddlers</h3>
+            <p class="age-tag">0-2 years</p>
+            <p>Our babies and toddlers enjoy free play, books and worship music in a safe, loving environment.</p>
+            <img src="~/images/infants.jpg" alt="Infants and Toddlers" />
+        </div>
+        <!-- Teal — Little Kids -->
+        
+        <div class="kid-col teal">
+            <h3>Little Kids</h3>
+            <p class="age-tag">Ages 3-Kindergarten</p>
+            <p>Our Little Kids enjoy interactive play followed by worship, an engaging Bible lesson and a craft.</p>
+            <img src="~/images/littlekids.jpg" alt="Little Kids" />
+        </div>
+        
+        <!-- Peach — Big Kids -->
+        <div class="kid-col peach">
+            <h3>Big Kids</h3>
+            
+            <p class="age-tag">Grades 1st-5th</p>
+            <p>Our Big Kids join their families for worship and are dismissed right before the message for interactive Bible lessons.</p>
+            <img src="~/images/bigkids.jpg" alt="Big Kids" />
+        </div>
+    </div>
+
+    <!-- Accordion links -->
+    @* <div class="kids-accordion">
+        <div class="accordion-item open">
+            <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                Jesus, Safety, &amp; Fun
+                <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+                <p style="margin-bottom:12px;"><strong>Our biggest priorities are: Jesus, safety, and fun.</strong></p>
+                <ul>
+                    <li>All of our leaders and helpers are background checked.</li>
+                    <li>We have a qualified and trained security team guarding the premises.</li>
+                    <li>We never ignore a parent's issues or concerns. We look into them with full vigilance.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                Serve in Kids Ministry
+                <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+                <p style="margin-bottom:12px;"><strong>There are several ways you can serve in Kids Ministry.</strong></p>
+                <ul>
+                    <li>0-Preschool Teacher or Helper</li>
+                    <li>K-5th Teacher or Helper</li>
+                    <li>Check-In Desk</li>
+                </ul>
+                <div style="margin-top:20px;">
+                    <a href="#" class="btn-primary" style="font-size:12px;">I'm Interested in Serving</a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                Kids Curriculum
+                <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+                <p style="margin-bottom:12px;">Every week, kids experience the good news of the gospel through the Gospel Project:</p>
+                <ul>
+                    <li><strong>Christ Centered:</strong> Every story points back to Jesus.</li>
+                    <li><strong>Heart Transforming:</strong> True transformation from the gospel, not behavior modification.</li>
+                    <li><strong>Chronological:</strong> Genesis to Revelation in order, across all ages.</li>
+                    <li><strong>Theologically Rich:</strong> Doctrinally sound and thorough for every age.</li>
+                    <li><strong>Missionally Minded:</strong> Every session calls kids to live and share the gospel.</li>
+                </ul>
+                <div style="margin-top:20px;">
+                    <a href="#" class="btn-primary" style="font-size:12px;">Pre-Register Your Child</a>
+                </div>
+            </div>
+        </div>
+    </div> *@
+</div>
+
+<!-- YOUTH -->
+<section  id="youth" style="margin-top:100px;position:relative;overflow:hidden;min-height:500px;display:flex;align-items:center;padding:0;">
+    <div class="youth-bg"></div>
+    <div class="youth-content">
+        <div class="grade-badge">6th – 12th Grade</div>
+        <h2>Students meet on Sundays during the 10:00am service</h2>
+        <p>6th–12th grade students gather in their own space for snacks, games, a lesson, and discussion based on Sunday's sermon — tailored just for them.</p>
+        
+    </div>
+</section>
+
+<!-- LEARN MORE -->
+@* <section id="more">
+    <span class="section-label">Explore Grace Community</span>
+    <h2 class="section-title light">Want to Learn More?</h2>
+    <div class="red-divider center" style="margin:20px auto 50px;"></div>
+    <div class="learn-grid">
+        <a href="#" class="learn-card">
+            <span class="lc-icon">📖</span>
+            <h4>Our Teaching</h4>
+        </a>
+        <a href="#" class="learn-card">
+            <span class="lc-icon">🎯</span>
+            <h4>Our Vision</h4>
+        </a>
+        <a href="#" class="learn-card">
+            <span class="lc-icon">👥</span>
+            <h4>Our Team</h4>
+        </a>
+        <a href="#" class="learn-card">
+            <span class="lc-icon">📜</span>
+            <h4>Our Beliefs</h4>
+        </a>
+        <a href="#" class="learn-card">
+            <span class="lc-icon">✉️</span>
+            <h4>Share Your Story</h4>
+        </a>
+    </div>
+    <div style="margin-top:16px;">
+        <a href="@Url.Action("Welcome","Home")" class="btn-primary">Let Us Know You're Coming</a>
+    </div>
+</section> *@
+
+
+
+<script>
+    function toggleAccordion(btn) {
+      const item = btn.closest('.accordion-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+
+    const subnav = document.querySelector('.subnav');
+    const links = subnav.querySelectorAll('a');
+    const sections = ['location','kids','youth','more'].map(id => document.getElementById(id));
+    window.addEventListener('scroll', () => {
+      let current = 0;
+      sections.forEach((s, i) => {
+        if (s && window.scrollY >= s.offsetTop - 130) current = i;
+      });
+      links.forEach((l, i) => l.classList.toggle('active', i === current));
+    });
+</script>

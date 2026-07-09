@@ -1,0 +1,175 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+    Layout = "~/Views/Shared/_HeaderLayout.cshtml";
+}
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&family=Barlow+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet" />
+<link href="~/css/Biblestudy.css" rel="stylesheet" />
+
+<div>
+    <h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Bible Study at KPHB, Bachupally, Medipally, B.N. Reddy Nagar — The Potters Church</h2>
+
+    <!-- INDEX NAV -->
+    <nav class="bs-index" aria-label="Jump to location">
+        <div class="bs-index-item" onclick="document.getElementById('pg1').scrollIntoView({behavior:'smooth'})">
+            <div class="bs-index-num">01</div><div class="bs-index-name">KPHB</div>
+        </div>
+        <div class="bs-index-item" onclick="document.getElementById('pg2').scrollIntoView({behavior:'smooth'})">
+            <div class="bs-index-num">02</div><div class="bs-index-name"> Medipally </div>
+        </div>
+        <div class="bs-index-item" onclick="document.getElementById('pg3').scrollIntoView({behavior:'smooth'})">
+            <div class="bs-index-num">03</div><div class="bs-index-name"> B.N. Reddy</div>
+        </div>
+        <div class="bs-index-item" onclick="document.getElementById('pg4').scrollIntoView({behavior:'smooth'})">
+            <div class="bs-index-num">04</div><div class="bs-index-name">Bachupally</div>
+        </div>
+    </nav>
+
+    <!-- ══ PAGE 1 — KPHB ══ -->
+    <section id="pg1" class="p1" aria-label="KPHB Bible Study">
+        <div class="p1-img">
+            <img src="~/images/kphbbibletudytemp copy.png" alt="People gathered for Bible study in warm light" loading="lazy" />
+            <div class="p1-img-overlay"></div>
+            
+            <div class="p1-ghost" aria-hidden="true">01</div>
+        </div>
+        <div class="p1-content">
+            <div class="p1-eyebrow">Bible Study · Location 01</div>
+            <h2 class="p1-loc">KPH<em>B</em></h2>
+            <div class="p1-rule"></div>
+            <div class="p1-day">Every Tuesday</div>
+            <div class="p1-time">7:30 pm – 9:30 pm</div>
+            <p class="p1-desc">A weekly gathering rooted in Scripture — open, welcoming, and alive. Come hungry for the Word and leave strengthened in faith.</p>
+            <div class="p1-meta">
+                <div class="p1-meta-row"><i class="ti ti-map-pin" aria-hidden="true"></i><span>KPHB 5th Phase, Kukatpally Housing Board Colony, Hyderabad 500072</span></div>
+                <div class="p1-meta-row"><i class="ti ti-clock" aria-hidden="true"></i><span>Doors open 6:45 pm </span></div>
+                <div class="p1-meta-row"><i class="ti ti-users" aria-hidden="true"></i><span>Growing together in God's Word</span></div>
+            </div>
+            <a class="p1-btn" href="@Url.Action("welcome","home")">Next Steps ↗</a>
+        </div>
+    </section>
+
+    <!-- SEP -->
+        <div class="sep"><div class="sep-line"></div><div class="sep-lbl">02 · Medipally</div><div class="sep-line"></div></div>
+
+        <!-- ══ PAGE 2 — Medipally ══ -->
+    <section id="pg2" class="p2" aria-label="Medipally Bible Study">
+        <div class="p2-hero">
+            <img src="~/images/medipally.jpeg" alt="Community gathering around Bible study" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.7) saturate(.9);" />
+            <div class="p2-hero-ov"></div>
+            <div class="p2-ghost" aria-hidden="true">02</div>
+            <div class="p2-hero-text">
+                <div><span class="p2-badge">Location 02</span></div>
+                <h2 class="p2-loc">Medi<em>pally</em></h2>
+            </div>
+        </div>
+        <div class="p2-body">
+            <div class="p2-info">
+                <div class="p2-label">Schedule</div>
+                <div class="p2-time-big">7:30 – 9:30 pm</div>
+                <div class="p2-day-s">Every Wednesday evening</div>
+                <div class="p2-divider"></div>
+                <div class="p2-label">About this group</div>
+                <p class="p2-desc">A mid-week gathering to study God's word verse-by-verse. Expect real conversation, honest questions, and a community that feels like family. Whether you've followed Jesus for decades or you're just starting out — there's a place for you here.</p>
+            </div>
+            <div class="p2-side">
+                <div>
+                    <div class="p2-addr-title">Location</div>
+                    <div class="p2-addr-text">Medipally<br>Medchal–Malkajgiri District<br>Hyderabad, Telangana 500090</div>
+                </div>
+                
+                <img class="p2-img2" src="~/images/medipally.png" alt="Open Bible and study" loading="lazy" />
+            </div>
+        </div>
+    </section>
+
+    <!-- SEP -->
+    <div class="sep"><div class="sep-line"></div><div class="sep-lbl">03 · B.N. Reddy Nagar</div><div class="sep-line"></div></div>
+
+    <!-- ══ PAGE 3 — MEDIPALLY ══ -->
+    <section id="pg3" class="p3" aria-label="Medipally Bible Study">
+        <div class="p3-strip">
+            <span class="p3-strip-t">The Potters Church · Bible Study</span>
+            <span class="p3-strip-n">03 / 04</span>
+        </div>
+        <div class="p3-inner">
+            <div class="p3-content">
+                <div class="p3-over">Location 03 · Bible Study</div>
+                <h2 class="p4-loc">B.N.<br><em>Reddy</em><br>Nagar</h2>
+                <div class="p3-rule"></div>
+                <div class="p3-time-row">
+                    <span class="p3-tv">7:30 pm</span>
+                    <span class="p3-tl">– 9:30 pm</span>
+                </div>
+                <div class="p3-day">Every Wednesday</div>
+                <p class="p3-desc">Wednesday evenings in B.N, Reddy Nagar are a time to slow down, open Scripture, and let the Word go deep. A warm community shaped by faith, honesty, and genuine belonging.</p>
+                <div class="p3-detail">
+                    <div class="p3-dr"><i class="ti ti-map-pin" aria-hidden="true"></i><span>B.N.Reddy Nagar, Rangareddy District, Telangana 500070</span></div>
+                    <div class="p3-dr"><i class="ti ti-clock" aria-hidden="true"></i><span>Doors open 6:45 pm </span></div>
+                    <div class="p3-dr"><i class="ti ti-book" aria-hidden="true"></i><span>Bring your Bible · All translations welcome</span></div>
+                    <div class="p3-dr"><i class="ti ti-users" aria-hidden="true"></i><span>Growing together in God's Word</span></div>
+                </div>
+            </div>
+            <div class="p3-img-col">
+                
+                <img src="~/images/bnreddy.png" alt="Small group Bible study warm atmosphere" loading="lazy" />
+                <div class="p3-img-cap">
+                    <span>B.N.Reddy Nagar · Telangana</span>
+                    <em>Thu 7:30 pm</em>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEP -->
+    <div class="sep"><div class="sep-line"></div><div class="sep-lbl">04 · Bachupally</div><div class="sep-line"></div></div>
+
+    <!-- ══ PAGE 4 — B.N. REDDY NAGAR ══ -->
+    <section id="pg4" class="p4" aria-label="B.N. Reddy Nagar Bible Study">
+        <div class="p4-header">
+            <div class="p4-hl">
+                <div class="p4-bignum" aria-hidden="true">04</div>
+                <div>
+                    <div class="p4-hlabel">Location</div>
+                    <div class="p4-htitle">Bachupally</div>
+                </div>
+            </div>
+            <div class="p4-hr">The Potters Church · Bible Study</div>
+        </div>
+        <div class="p4-body">
+            <div>
+                <h2 class="p2-loc">Bachu<em>pally</em></h2>
+                <p class="p4-intro">End your week in the Word. Thursday evenings are a time to gather, breathe, and study Scripture together — a community built on faith, honesty, and real belonging.</p>
+                <img class="p4-img-main" src="~/images/bachupally.jpeg" alt="Church community gathering evening" loading="lazy" />
+                <div class="p4-img-cap">Bible study group · Bachupally, Telangana</div>
+            </div>
+            
+            <div class="p4-sidebar">
+                <div class="p4-sb">
+                    <div class="p4-slabel">Day &amp; Time</div>
+                    <div class="p4-stime">7:30 pm</div>
+                    <div class="p4-sday">Every Thursday · 7:30 – 9:30 pm</div>
+                </div>
+                <div class="p4-srule"></div>
+                <div class="p4-sb">
+                    <div class="p4-slabel">Address</div>
+                    <div class="p4-saddr"><strong>Bachupally</strong>Medchal–Malkajgiri District<br>Hyderabad, Telangana 500090</div>
+                </div>
+                <div class="p4-srule"></div>
+                <div class="p4-sb">
+                    <div class="p4-slabel">What to expect</div>
+                    <div class="p4-list">
+                        <div class="p4-list-item"><i class="ti ti-music" aria-hidden="true"></i>Opening worship &amp; prayer</div>
+                        <div class="p4-list-item"><i class="ti ti-book" aria-hidden="true"></i>Verse-by-verse Scripture study</div>
+                        <div class="p4-list-item"><i class="ti ti-message-circle" aria-hidden="true"></i>Open discussion &amp; Q&amp;A</div>
+                        <div class="p4-list-item"><i class="ti ti-coffee" aria-hidden="true"></i>Fellowship &amp; refreshments</div>
+                    </div>
+                </div>
+                <a class="p1-btn" href="@Url.Action("welcome", "home")">Next Steps ↗</a>
+            </div>
+        </div>
+    </section>
+</div>

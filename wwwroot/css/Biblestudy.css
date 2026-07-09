@@ -1,0 +1,798 @@
+﻿:root {
+    --red: #C0392B;
+    --dark: #0f0e0e;
+    --cream: #f5f4f0;
+    --muted: #7a7772;
+}
+
+/* ── INDEX NAV ── */
+.bs-index {
+    background: var(--dark);
+    padding: 0 56px;
+    display: flex;
+    align-items: stretch;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.bs-index-item {
+    flex: 1;
+    text-align: center;
+    padding: 18px 12px;
+    border-right: 1px solid rgba(255,255,255,0.06);
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+    .bs-index-item:last-child {
+        border-right: none;
+    }
+
+    .bs-index-item:hover {
+        background: rgba(255,255,255,0.05);
+    }
+
+.bs-index-num {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--red);
+    line-height: 1;
+}
+
+.bs-index-name {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #444;
+}
+
+/* ── PAGE 1 — KPHB ── */
+.p1 {
+    background: var(--dark);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+.p1-img {
+    position: relative;
+    overflow: hidden;
+}
+
+    .p1-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        opacity: .75;
+        filter: contrast(1.05);
+    }
+
+.p1-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(105deg,transparent 50%,var(--dark) 95%);
+}
+
+.p1-ghost {
+    position: absolute;
+    bottom: -30px;
+    left: -8px;
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: 260px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.03);
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.p1-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 56px 80px 44px;
+}
+
+.p1-eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .p1-eyebrow::before {
+        content: '';
+        display: inline-block;
+        width: 28px;
+        height: 2px;
+        background: var(--red);
+    }
+
+.p1-loc {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: clamp(56px,7vw,96px);
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: .88;
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+}
+
+    .p1-loc em {
+        color: var(--red);
+        font-style: normal;
+    }
+
+.p1-rule {
+    width: 48px;
+    height: 3px;
+    background: var(--red);
+    margin-bottom: 28px;
+}
+
+.p1-day {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.p1-time {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 28px;
+}
+
+.p1-desc {
+    font-size: 14px;
+    font-weight: 300;
+    color: #888;
+    line-height: 1.85;
+    margin-bottom: 32px;
+    max-width: 320px;
+}
+
+.p1-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.p1-meta-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+    .p1-meta-row i {
+        color: var(--red);
+        font-size: 15px;
+        margin-top: 1px;
+        flex-shrink: 0;
+    }
+
+.p1-btn {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    font-family: 'Barlow Condensed',sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 13px 32px;
+    border: none;
+    cursor: pointer;
+    transition: background .2s;
+    width: fit-content;
+}
+
+    .p1-btn:hover {
+        background: #a93226;
+    }
+
+/* ── PAGE 2 — BACHUPALLY ── */
+.p2 {
+    background: var(--cream);
+}
+
+.p2-hero {
+    position: relative;
+    height: 58vh;
+    min-height: 360px;
+    overflow: hidden;
+}
+
+    .p2-hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        object-position: center 30%;
+    }
+
+.p2-hero-ov {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,rgba(15,14,14,.15) 0%,rgba(15,14,14,.82) 100%);
+}
+
+.p2-ghost {
+    position: absolute;
+    top: 10px;
+    right: 32px;
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: 180px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.05);
+    line-height: 1;
+    pointer-events: none;
+}
+
+.p2-hero-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 56px;
+}
+
+.p2-badge {
+    display: inline-block;
+    border: 1.5px solid var(--red);
+    color: var(--red);
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    margin-bottom: 14px;
+}
+
+.p2-loc {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: clamp(44px,6vw,80px);
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: .88;
+}
+
+    .p2-loc em {
+        color: var(--red);
+        font-style: normal;
+    }
+
+.p2-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--cream);
+}
+
+.p2-info {
+    padding: 48px 56px;
+    border-right: 1px solid #ddd;
+}
+
+.p2-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 10px;
+}
+
+.p2-time-big {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: 44px;
+    font-weight: 900;
+    color: var(--dark);
+    margin-bottom: 4px;
+}
+
+.p2-day-s {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 28px;
+}
+
+.p2-divider {
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    margin-bottom: 24px;
+}
+
+.p2-desc {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.85;
+}
+
+.p2-side {
+    padding: 48px 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.p2-addr-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+}
+
+.p2-addr-text {
+    font-size: 15px;
+    color: var(--dark);
+    line-height: 1.7;
+}
+
+.p2-img2 {
+    width: 100%;
+    height: 160px;
+    object-fit: initial;
+    display: block;
+}
+
+/* ── PAGE 3 — MEDIPALLY ── */
+.p3 {
+    background: #fff;
+}
+
+.p3-strip {
+    background: var(--red);
+    padding: 16px 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p3-strip-t {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.p3-strip-n {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: 12px;
+    color: rgba(255,255,255,.4);
+    letter-spacing: 2px;
+}
+
+.p3-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: calc(100vh - 52px);
+}
+
+.p3-content {
+    padding: 64px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #eee;
+}
+
+.p3-over {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 22px;
+}
+
+.p3-loc {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: clamp(48px,5.5vw,80px);
+    font-weight: 900;
+    color: var(--dark);
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+    line-height: .88;
+    margin-bottom: 24px;
+}
+
+.p3-rule {
+    width: 40px;
+    height: 3px;
+    background: var(--dark);
+    margin-bottom: 26px;
+}
+
+.p3-time-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.p3-tv {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--dark);
+}
+
+.p3-tl {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.p3-day {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 28px;
+    margin-top: 4px;
+}
+
+.p3-desc {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.85;
+    margin-bottom: 36px;
+    max-width: 310px;
+}
+
+.p3-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.p3-dr {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--dark);
+    line-height: 1.5;
+}
+
+    .p3-dr i {
+        color: var(--red);
+        font-size: 15px;
+        margin-top: 1px;
+        width: 18px;
+        flex-shrink: 0;
+    }
+
+.p3-img-col {
+    position: relative;
+    overflow: hidden;
+}
+
+    .p3-img-col img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        min-height: 500px;
+    }
+
+.p3-img-cap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(15,14,14,.88);
+    padding: 18px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .p3-img-cap span {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .p3-img-cap em {
+        font-style: normal;
+        font-size: 10px;
+        color: var(--red);
+        letter-spacing: 1px;
+    }
+
+/* ── PAGE 4 — B.N. REDDY ── */
+.p4 {
+    background: var(--dark);
+    color: #fff;
+}
+
+.p4-header {
+    padding: 48px 56px 28px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+}
+
+.p4-hl {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.p4-bignum {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: 84px;
+    font-weight: 900;
+    color: var(--red);
+    line-height: 1;
+}
+
+.p4-hlabel {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #444;
+    margin-bottom: 4px;
+}
+
+.p4-htitle {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.p4-hr {
+    font-size: 10px;
+    color: #333;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.p4-body {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 0;
+    padding: 48px 56px 64px;
+    align-items: start;
+}
+
+.p4-loc {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: clamp(52px,6.5vw,92px);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: .85;
+    margin-bottom: 22px;
+}
+
+    .p4-loc em {
+        color: var(--red);
+        font-style: normal;
+    }
+
+.p4-intro {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    line-height: 1.85;
+    max-width: 360px;
+    margin-bottom: 32px;
+}
+
+.p4-img-main {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(.85);
+}
+
+.p4-img-cap {
+    font-size: 10px;
+    color: #333;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 10px 0 0;
+}
+
+.p4-sidebar {
+    padding-left: 48px;
+    border-left: 1px solid rgba(255,255,255,.06);
+}
+
+.p4-sb {
+    margin-bottom: 36px;
+}
+
+.p4-slabel {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 10px;
+}
+
+.p4-stime {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+}
+
+.p4-sday {
+    font-size: 13px;
+    color: #555;
+    margin-top: 4px;
+}
+
+.p4-srule {
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,.06);
+    margin: 24px 0;
+}
+
+.p4-saddr {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.85;
+}
+
+    .p4-saddr strong {
+        color: #ccc;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 2px;
+    }
+
+.p4-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.p4-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #555;
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(255,255,255,.04);
+}
+
+    .p4-list-item:last-child {
+        border-bottom: none;
+    }
+
+    .p4-list-item i {
+        color: var(--red);
+        font-size: 14px;
+        flex-shrink: 0;
+    }
+
+.p4-join {
+    display: inline-block;
+    margin-top: 28px;
+    background: var(--red);
+    color: #fff;
+    font-family: 'Barlow Condensed',sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 13px 28px;
+    border: none;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+    .p4-join:hover {
+        background: #a93226;
+    }
+
+/* ── SEPARATOR ── */
+.sep {
+    display: flex;
+    align-items: center;
+    background: var(--cream);
+}
+
+.sep-line {
+    flex: 1;
+    height: 1px;
+    background: #d8d5cf;
+}
+
+.sep-lbl {
+    padding: 18px 36px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #bbb;
+    white-space: nowrap;
+}
+
+@media(max-width:640px) {
+    .p1, .p3-inner, .p4-body {
+        grid-template-columns: 1fr;
+    }
+
+    .p1-img {
+        height: 45vh;
+    }
+
+    .p2-body {
+        grid-template-columns: 1fr;
+    }
+
+    .p3-img-col {
+        height: 280px;
+    }
+
+        .p3-img-col img {
+            min-height: 280px;
+        }
+
+    .p4-sidebar {
+        padding-left: 0;
+        border-left: none;
+        padding-top: 32px;
+        margin-top: 32px;
+        border-top: 1px solid rgba(255,255,255,.06);
+    }
+
+    .p1-content, .p2-info, .p2-side, .p3-content, .p4-body, .p4-header, .p3-strip, .bs-index {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .p2-hero-text {
+        padding: 28px 20px;
+    }
+}

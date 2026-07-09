@@ -14,13 +14,102 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Barlow Condensed / Barlow replaces Neue Haas Grotesk (similar grotesque sans) -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&family=Barlow+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Font Awesome 6 Free (replaces WordPress font-awesome 4.x) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Magnific Popup (same library, public CDN) -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-	<link href="~/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+
+        #slide-out-widget-area {
+        position: fixed;
+        right: -380px;
+        top: 0;
+        width: 380px;
+        height: 100%;
+        background: #fff;
+        transition: right .4s ease-in-out;
+        }
+
+        #slide-out-widget-area.open {
+        right: 0;
+        }
+
+        /* Menu Item */
+        .off-canvas-menu-container ul li {
+        list-style: none;
+        overflow: hidden;
+        margin-bottom: 8px;
+        }
+
+        .inner-wrap {
+        background: #a71e30;
+        }
+
+        /* Link */
+        .off-canvas-menu-container ul li a {
+        display: block;
+        padding: 14px 20px;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 10px;
+        position: relative;
+        transition: all 0.35s ease;
+        }
+
+        /* Sliding Maroon Background */
+        .off-canvas-menu-container ul li a::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: #000000; /* Maroon */
+        border-radius: 10px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.35s ease;
+        z-index: -1;
+        }
+
+        /* Hover Effect */
+        .hamburger-btn:hover {
+        color: #000; /* Black text */
+        padding-left: 35px; /* Move text slightly */
+        }
+
+        .hamburger-btn::before {
+        transform: scaleX(1);
+        }
+
+        /* Reset when mouse leaves happens automatically */
+    </style>
+
+    <script>
+
+        $(document).ready(function () {
+
+        // Open menu on hover
+        $("#ocm-toggle").mouseenter(function () {
+        $("#slide-out-widget-area").addClass("open");
+        });
+
+        // Keep menu open while hovering over it
+        $("#slide-out-widget-area").mouseenter(function () {
+        $(this).addClass("open");
+        });
+
+        // Close menu when mouse leaves the menu
+        $("#slide-out-widget-area").mouseleave(function () {
+        $(this).removeClass("open");
+        });
+
+        });
+
+    </script>
+
+
 </head>
 <body>
 
@@ -41,11 +130,12 @@
     <!-- ══ HEADER ══ -->
     <div id="header-outer">
         <div class="header-inner">
-            <a id="logo" href="@Url.Action("index","Home")">
-                <img class="logo-white" src="~/images/logo.png" alt="The Potters Church" height="50">
-			</a>
+            <a id="logo" href="@Url.Action("index", "Home")">
+                <img class="logo-white" src="~/images/tpclogo.png" alt="The Potters Church" height="50">
+            </a>
 			
-            <button class="hamburger-btn" id="ocm-toggle" aria-label="Navigation Menu" aria-expanded="false">
+            <button class="hamburger-btn" style="    position: fixed;
+                right: 1%;" id="ocm-toggle" aria-label="Navigation Menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -60,24 +150,23 @@
             </button>
             <div class="off-canvas-menu-container" role="navigation">
                 <ul>
-                    <li><a href="#">Sundays</a></li>
-                    <li><a href="#">Groups</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Teaching</a></li>
-                    <li><a href="#">Formation</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Give</a></li>
+                    <li><a href="@Url.Action("Sundays", "Home")#sundays">Sundays</a></li>
+                    <li><a href="@Url.Action("Biblestudies", "Home")#groups">Bible Studies</a></li>
+                    <li><a href="@Url.Action("About", "Home")">About</a></li>
+                    <li><a href="@Url.Action("index", "Home")#Series">Sermons</a></li>
+                    <li><a href="@Url.Action("index", "Home")#events">Events</a></li>
+                    <li><a href="@Url.Action("welcome", "Home")">Connect</a></li>
                 </ul>
             </div>
             <div class="ocm-bottom-meta">
                 <p>
                     <strong>Sundays at 8:00a &amp; 10:30a</strong><br>
-                        <a href="https://maps.app.goo.gl/cKBbq8Tr2CbMQGUc8">KPHB,Hyderabad</a>
+                    <a href="https://maps.app.goo.gl/cKBbq8Tr2CbMQGUc8">KPHB,Hyderabad</a>
                 </p>
                 <ul class="off-canvas-social-links">
-                        <li><a href="https://www.facebook.com/tvforchrist" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.youtube.com/@@Potterschurchmedia" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
-                        <li><a href="https://www.instagram.com/potterschurchmedia/#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/tvforchrist" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.youtube.com/@@Potterschurchmedia" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/potterschurchmedia/#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -85,40 +174,40 @@
 
     
     @RenderBody()
-    
 
+    
     <footer id="footer-outer" role="contentinfo">
         <div id="footer-widgets">
             <div class="container">
                 <div class="row">
                     <!-- About Us -->
                     <div class="footer-col">
-                        <h4>About Us</h4>
+                        <h4 style="padding-left: 25px;">About Us</h4>
                         <ul>
-                            <li><a href="#">Our Vision</a></li>
-                            <li><a href="#">Our Team</a></li>
-                            <li><a href="#">Our Beliefs</a></li>
-                            <li><a href="#">PCC Kids</a></li>
-                            <li><a href="#">PCC YTH</a></li>
+                            <li><a href="@Url.Action("about", "Home")#sec-vision">Our Vision</a></li>
+                            <li><a href="@Url.Action("about", "Home")#sec-team">Our Team</a></li>
+                            <li><a href="@Url.Action("about", "Home")#sec-beliefs">Our Beliefs</a></li>
+                            <li><a href="@Url.Action("sundays", "Home")#kids">TPC Kids</a></li>
+                            <li><a href="@Url.Action("sundays", "Home")#youth">TPC YTH</a></li>
                         </ul>
                     </div>
                     <!-- Next Steps -->
                     <div class="footer-col">
-                        <h4>Next Steps</h4>
+                        <h4 style="padding-left: 25px;">Next Steps</h4>
                         <ul>
-                            <li><a href="#">Plan Your Visit</a></li>
-                            <li><a href="#" target="_blank">Start Here Class</a></li>
-                            <li><a href="#" target="_blank">Stay Here Form</a></li>
-                            <li><a href="#">Get Baptized</a></li>
+                            <li><a href="@Url.Action("welcome", "home")" target="_blank">Welcome</a></li>
+                            <li><a href="@Url.Action("welcome", "home")" target="_blank">Prayer Request</a></li>
+                            <li><a href="@Url.Action("welcome", "home")" target="_blank">Membership</a></li>
+                            <li><a href="@Url.Action("welcome", "home")" target="_blank">Next Steps</a></li>
                         </ul>
                     </div>
                     <!-- Watch & Listen -->
                     <div class="footer-col">
                         <h4>Watch &amp; Listen</h4>
                         <ul>
-                            <li><a href="https://formedbyjesus.com" target="_blank">Formed by Jesus</a></li>
-                            <li><a href="https://passioncreek.church/teaching/">Teaching</a></li>
-                            <li><a href="https://www.youtube.com/passioncreekchurch" target="_blank">YouTube Page</a></li>
+                            <li><a href="@Url.Action("index", "Home")#Series" target="_blank">Sermons</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=NS_dZu4-LB8">Bible Studies</a></li>
+                            <li><a href="https://www.youtube.com/@@Potterschurchmedia" target="_blank">YouTube Page</a></li>
                         </ul>
                     </div>
                     <!-- Service Times & Location -->
@@ -126,12 +215,12 @@
                         <h4>Service Times &amp; Location</h4>
                         <p>
                             Sundays at 8:00a &amp; 10:30a<br>
-                                <a href="https://maps.app.goo.gl/cKBbq8Tr2CbMQGUc8" target="_blank" rel="noopener">
-                                    KPHB 5th Phase, Kukatpally Housing Board Colony<br>
-                                    Hyderabad, Telangana 500072
+                            <a href="https://maps.app.goo.gl/cKBbq8Tr2CbMQGUc8" target="_blank" rel="noopener">
+                                KPHB 5th Phase, Kukatpally Housing Board Colony<br>
+                                Hyderabad, Telangana 500072
                             </a>
                         </p>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -365,17 +454,17 @@
         }(document,'script'));
 
         $(document).ready(function(){
-            let slides = document.querySelectorAll(".slide");
-            let index = 0;
+        let slides = document.querySelectorAll(".slide");
+        let index = 0;
 
-            setInterval(() => {
-            slides[index].classList.remove("active");
-            index = (index + 1) % slides.length;
-            slides[index].classList.add("active");
-            }, 4000);
+        setInterval(() => {
+        slides[index].classList.remove("active");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("active");
+        }, 4000);
         } );
-            
 
+            
     </script>
 </body>
 </html>

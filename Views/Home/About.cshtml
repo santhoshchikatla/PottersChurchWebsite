@@ -1,0 +1,345 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+    Layout = "~/Views/Shared/_HeaderLayout.cshtml";
+}
+
+<style>
+    
+    #header-outer{
+        background: black !important;
+        position:unset !important;
+    }
+    .header-inner{
+        justify-content:center !important;
+    }
+
+    #logo img {
+        height: 200px !important;
+        width: 100% !important
+    }
+    .hamburger-btn
+    {
+            position: absolute;
+            top: 54px;
+            right: 17px;
+    }
+    .header-inner {
+    
+    height: 143px !important
+    }
+</style>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&family=Barlow+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet" />
+<link href="~/css/About.css" rel="stylesheet" />
+
+
+<div class="ab-root">
+
+    <!-- STICKY NAV -->
+    <nav class="ab-nav" aria-label="About page sections">
+        <div class="ab-nav-item active" onclick="scrollTo('sec-teaching',this)"><div class="ab-nav-dot"></div><div class="ab-nav-label">Our Teaching</div></div>
+        <div class="ab-nav-item" onclick="scrollTo('sec-vision',this)"><div class="ab-nav-dot"></div><div class="ab-nav-label">Our Vision</div></div>
+        <div class="ab-nav-item" onclick="scrollTo('sec-team',this)"><div class="ab-nav-dot"></div><div class="ab-nav-label">Our Team</div></div>
+        <div class="ab-nav-item" onclick="scrollTo('sec-beliefs',this)"><div class="ab-nav-dot"></div><div class="ab-nav-label">Our Beliefs</div></div>
+        <div class="ab-nav-item" onclick="scrollTo('sec-story',this)"><div class="ab-nav-dot"></div><div class="ab-nav-label">Share Your Story</div></div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="ab-hero">
+        <div class="ab-hero-left">
+            <div class="ab-hero-eyebrow">About The Potters Church</div>
+            <h1 class="ab-hero-h1">Who<br>We<br><em>Are</em></h1>
+            <div class="ab-hero-rule"></div>
+            <p class="ab-hero-p">As a church, we commit to living out these truths through clear Gospel proclamation, biblical preaching, passionate worship, deliberate simplicity, and bold, Spirit-led obedience to God’s urgent mission.</p>
+            <div class="ab-hero-stats">
+                <div><div class="ab-stat-num">5+</div><div class="ab-stat-lbl">Years of Ministry</div></div>
+                <div><div class="ab-stat-num">4</div><div class="ab-stat-lbl">Bible Study Locations</div></div>
+                <div><div class="ab-stat-num">100+</div><div class="ab-stat-lbl">Weekly Worshippers</div></div>
+            </div>
+        </div>
+        <div class="ab-hero-right">
+            
+            <img src="~/images/img_6194.jpg" alt="Church community worship" loading="lazy" />
+            <div class="ab-hero-right-ov"></div>
+            <div class="ab-ghost" aria-hidden="true">PC</div>
+        </div>
+    </section>
+
+    <!-- ── OUR TEACHING ── -->
+    <section id="sec-teaching" class="ab-section ab-teaching">
+        <div class="ab-teaching-inner">
+            <div class="ab-teaching-img">
+                <img style="filter: brightness(47%);" src="~/images/img_6166.jpg" alt="Preaching and teaching" loading="lazy" />
+                <div class="ab-teaching-badge">
+                    <div class="ab-teaching-badge-big">Word<br>Driven</div>
+                    <div class="ab-teaching-badge-sm">Every Sunday</div>
+                </div>
+            </div>
+            <div class="ab-teaching-right">
+                <div class="ab-eyebrow">Our Teaching</div>
+                <h2 class="ab-h2">Grounded<br>in <em style="color:var(--red);font-style:normal;">Scripture</em></h2>
+                <div class="ab-rule"></div>
+                <p class="ab-body">Every sermon at The Potters Church is built directly from the Bible. We believe God's Word is living, active, and relevant to every season of life. Our teaching is expository — we walk through books of the Bible passage by passage, letting the text set the agenda and trusting that the Holy Spirit does the work.</p>
+                <div class="ab-pillars">
+                    <div class="ab-pillar">
+                        <div class="ab-pillar-icon">📖</div>
+                        <div class="ab-pillar-title">Expository</div>
+                        <div class="ab-pillar-desc">We let Scripture speak for itself, verse by verse and book by book.</div>
+                    </div>
+                    <div class="ab-pillar">
+                        <div class="ab-pillar-icon">🎯</div>
+                        <div class="ab-pillar-title">Applicable</div>
+                        <div class="ab-pillar-desc">Ancient truth meets everyday life in Hyderabad — practical and real.</div>
+                    </div>
+                    <div class="ab-pillar">
+                        <div class="ab-pillar-icon">🔥</div>
+                        <div class="ab-pillar-title">Spirit-led</div>
+                        <div class="ab-pillar-desc">We preach with conviction, trusting the Holy Spirit to move hearts.</div>
+                    </div>
+                    <div class="ab-pillar">
+                        <div class="ab-pillar-icon">🌍</div>
+                        <div class="ab-pillar-title">Gospel-centred</div>
+                        <div class="ab-pillar-desc">Every message points back to Jesus — his life, death, and resurrection.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── OUR VISION ── -->
+    <section id="sec-vision" class="ab-section ab-vision">
+        <div class="ab-vision-inner">
+            <div class="ab-eyebrow" style="color:var(--red);">Our Vision</div>
+            <h2 class="ab-h2" style="color:#fff;">Built to<br><em style="color:var(--red);font-style:normal;">Last</em></h2>
+            <div class="ab-rule"></div>
+            <p class="ab-body">As a church, we commit to living out these truths through clear Gospel proclamation, biblical preaching, passionate worship, deliberate simplicity, and bold, Spirit-led obedience to God’s urgent mission.</p>
+            <div class="ab-vision-grid">
+                <div class="ab-vis-card">
+                    <div class="ab-vis-card-num" aria-hidden="true">01</div>
+                    <div class="ab-vis-card-icon">🎯</div>
+                    <div class="ab-vis-card-title">Mission</div>
+                    <div class="ab-vis-card-desc">At The Potter's Church, our mission is to glorify God by passionately proclaiming the clear gospel of Jesus Christ, nurturing believers through biblical preaching and deep discipleship, and equipping them to serve with love and mercy. Rooted in sacrificial community and united in diversity, we seek to boldly share His grace and truth with the world, starting in KPHB, Hyderabad, and extending to the nations.</div>
+                    <div class="ab-vis-card-line"></div>
+                </div>
+                <div class="ab-vis-card">
+                    <div class="ab-vis-card-num" aria-hidden="true">02</div>
+                    <div class="ab-vis-card-icon">👁️</div>
+                    <div class="ab-vis-card-title">Vision</div>
+                    <div class="ab-vis-card-desc">We envision a vibrant church family transformed by the power of the Gospel, living in bold prayer, passionate worship, and deliberate simplicity. Together, we strive to embody Christ’s love, cultivating a community of faith marked by urgent mission and meaningful mercy, as we inspire every individual to embrace their unique calling in God’s eternal plan.</div>
+                    <div class="ab-vis-card-line"></div>
+                </div>
+                <div class="ab-vis-card">
+                    <div class="ab-vis-card-num" aria-hidden="true">03</div>
+                    <div class="ab-vis-card-icon">🚀</div>
+                    <div class="ab-vis-card-title">Goal</div>
+                    <div class="ab-vis-card-desc">Guided by faith, truth, love, and generosity, we dedicate ourselves to meeting in His presence, seeking His truth, serving with love, giving from the heart, and sharing His grace with a world in need.</div>
+                    <div class="ab-vis-card-line"></div>
+                </div>
+            </div>
+            <div class="ab-vision-quote">
+                <p>"The Great Commission is not an option to be considered; it is a command to be obeyed."</p>
+                <cite>— Hudson Taylor · Our guiding conviction</cite>
+            </div>
+        </div>
+        <div class="ab-vision-bg-text" aria-hidden="true">VISION</div>
+    </section>
+
+    <!-- ── OUR TEAM ── -->
+    <section id="sec-team" class="ab-section ab-team">
+        <div class="ab-team-inner">
+            <div class="ab-eyebrow">Our Team</div>
+            <h2 class="ab-h2">The People<br>Who <em style="color:var(--red);font-style:normal;">Lead</em></h2>
+            <div class="ab-rule"></div>
+            <p class="ab-body">Servant leaders who are first and foremost disciples — committed to the church, the city, and the people in their care.</p>
+            <div class="ab-team-grid">
+                <div class="ab-team-card">
+                    <div class="ab-team-card-accent"></div>
+                    
+                    <img class="ab-team-card-img" src="~/images/pastordaniel.png" alt="Senior Pastor" loading="lazy" />
+                    <div class="ab-team-card-body">
+                        <div class="ab-team-card-role">LEAD PASTOR</div>
+                        <div class="ab-team-card-name">DANIEL CEPHAS</div>
+                        <div class="ab-team-card-desc">Pastor Danny demonstrates a profound enthusiasm for scripture, audio, literature, and writing. His commitment extends to various community service roles and excelling as a musician. Particularly noteworthy is his deep affinity for language, evident in all his endeavours. Despite the demands of teaching and training throughout the day, he maintains a high spirit. He holds a vision for the teamvision and the growth of Potter's Church. Additionally, he enjoys hosting gatherings at his home, with the support of his industrious wife, Monica.</div>
+                    </div>
+                </div>
+                <div class="ab-team-card">
+                    <div class="ab-team-card-accent"></div>
+                    <img class="ab-team-card-img" src="~/images/pastorcaleb.png" alt="Worship Director" loading="lazy" />
+                    <div class="ab-team-card-body">
+                        <div class="ab-team-card-role">ASSISTANT PASTOR</div>
+                        <div class="ab-team-card-name">CALEB LEVI</div>
+                        <div class="ab-team-card-desc">Pastor Caleb is a knowledgeable individual akin to an encyclopedia, offering insights and solutions to a myriad of questions. He serves as a dedicated asset for all events hosted at TPC, showcasing a profound interest in studying scripture firsthand. Alongside his passion for writing and travel, he brings eight years of managerial expertise to his professional background and has dedicated seven years to ministry work. Recently, he entered a new chapter in his personal life by marrying the lovely Mounica last Year.</div>
+                    </div>
+                </div>
+                <div class="ab-team-card">
+                    <div class="ab-team-card-accent"></div>
+                    <img class="ab-team-card-img" src="~/images/pastorjoshua.png" alt="Groups Pastor" loading="lazy" />
+                    <div class="ab-team-card-body">
+                        <div class="ab-team-card-role">MINISTER</div>
+                        <div class="ab-team-card-name">JOSHUA BEZALLEL</div>
+                        <div class="ab-team-card-desc">Pastor Joshua is a disciplined man of God who serves as a Electrical Site Engineer in a reputable organization. He exhibits genuine enthusiasm for studying and delving into the scriptures. His unwavering commitment and dedication to assisting others and being accessible at all times set him apart, embodying the love of Christ through his actions. Married to Beulah, they are blessed with cute little girl Eliana Veeksha Joshua.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── OUR BELIEFS ── -->
+    <section id="sec-beliefs" class="ab-section ab-beliefs">
+        <div class="ab-beliefs-inner">
+            <div class="ab-beliefs-left">
+                <div class="ab-eyebrow">Our Beliefs</div>
+                <h2 class="ab-h2">What We<br><em style="color:var(--red);font-style:normal;">Stand</em> On</h2>
+                <div class="ab-rule"></div>
+                <p class="ab-body" style="margin-bottom:36px;">At The Potter's Church, we hold steadfastly to the transformative power of the Gospel, embracing the heritage of the many revivals as we seek to live as a vibrant community of faith. Rooted in Scripture, empowered by the Holy Spirit, and guided by the love of Christ, we affirm the following beliefs.</p>
+                <div class="ab-beliefs-list">
+                    <div class="ab-belief-item">
+                        <div class="ab-belief-num">I</div>
+                        <div class="ab-belief-text">
+                            <div class="ab-belief-title">The Triune God</div>
+                            <div class="ab-belief-desc">We believe in one God, eternally existing in three persons: Father, Son, and Holy Spirit, co-equal in power and glory</div>
+                            <div class="ab-belief-desc">Scripture Reference: Matthew 28:19; 2 Corinthians 13:14</div>
+                        </div>
+                    </div>
+                    <div class="ab-belief-item">
+                        <div class="ab-belief-num">II</div>
+                        <div class="ab-belief-text">
+                            <div class="ab-belief-title">The Authority of Scripture</div>
+                            <div class="ab-belief-desc">We affirm the Bible as the inspired, infallible Word of God, sufficient for teaching, rebuking, correcting, and training in righteousness.</div>
+                            <div class="ab-belief-desc">Scripture Reference: 2 Timothy 3:16-17.</div>
+                        </div>
+                    </div>
+                    <div class="ab-belief-item">
+                        <div class="ab-belief-num">III</div>
+                        <div class="ab-belief-text">
+                            <div class="ab-belief-title">Salvation by Grace Through Faith</div>
+                            <div class="ab-belief-desc">We proclaim that salvation is by grace alone, through faith alone, in Christ alone. Jesus' atoning death and resurrection provide the only way to be reconciled to God.</div>
+                            <div class="ab-belief-desc">Scripture Reference: Ephesians 2:8-9; Romans 10:9-10.</div>
+                        </div>
+                    </div>
+                    <div class="ab-belief-item">
+                        <div class="ab-belief-num">IV</div>
+                        <div class="ab-belief-text">
+                            <div class="ab-belief-title">The Transforming Power of the Gospel</div>
+                            <div class="ab-belief-desc">We believe in the power of the Gospel to transform lives, calling sinners to repentance and empowering believers to live holy and victorious lives.</div>
+                            <div class="ab-belief-desc">Scripture Reference: Romans 1:16; 2 Corinthians 5:17.</div>
+                        </div>
+                    </div>
+                    <div class="ab-belief-item">
+                        <div class="ab-belief-num">V</div>
+                        <div class="ab-belief-text">
+                            <div class="ab-belief-title">Holiness and Sanctification</div>
+                            <div class="ab-belief-desc">Drawing inspiration, we emphasize the call to holiness and the ongoing work of sanctification, enabled by the Holy Spirit, as believers grow in grace and Christlikeness.</div>
+                            <div class="ab-belief-desc">Scripture Reference: 1 Thessalonians 4:3-7; Hebrews 12:14.</div>
+                        </div>
+                    </div>
+                    <div class="ab-belief-item">
+                        <div class="ab-belief-num">VI</div>
+                        <div class="ab-belief-text">
+                            <div class="ab-belief-title">The Unity of All Believers</div>
+                            <div class="ab-belief-desc">We affirm the unity of all true Christians, transcending denominational and cultural boundaries, and celebrate diverse expressions of worship and service.</div>
+                            <div class="ab-belief-desc">Scripture Reference: John 17:21; Galatians 3:28.</div>
+                        </div>
+                    </div>
+                    <div class="ab-belief-item">
+                        <div class="ab-belief-num">VII</div>
+                        <div class="ab-belief-text">
+                            <div class="ab-belief-title">The Urgency of Mission</div>
+                            <div class="ab-belief-desc">We are called to share the Gospel with urgency, fulfilling the Great Commission to make disciples of all nations, beginning in our local community and reaching to the ends of the earth.</div>
+                            <div class="ab-belief-desc">Scripture Reference: Matthew 28:18-20; Acts 1:8.</div>
+                        </div>
+                    </div>
+                    <div class="ab-belief-item">
+                        <div class="ab-belief-num">VIII</div>
+                        <div class="ab-belief-text">
+                            <div class="ab-belief-title">Bold Prayer and Dependence on God</div>
+                            <div class="ab-belief-desc">We believe in the power of bold, faith-filled prayer to move mountains, bring revival, and align us with God's purposes.</div>
+                            <div class="ab-belief-desc">Scripture Reference: James 5:16; Mark 11:24.</div>
+                        </div>
+                    </div>
+                    <div class="ab-belief-item">
+                        <div class="ab-belief-num">IX</div>
+                        <div class="ab-belief-text">
+                            <div class="ab-belief-title">The Church as a Sacrificial Community</div>
+                            <div class="ab-belief-desc">The church is called to be a loving, sacrificial community that embodies Christ's mercy, shares in each other's burdens, and serves the world with compassion.</div>
+                            <div class="ab-belief-desc">Scripture Reference: Acts 2:42-47; Galatians 6:2.</div>
+                        </div>
+                    </div>
+                    <div class="ab-belief-item">
+                        <div class="ab-belief-num">X</div>
+                        <div class="ab-belief-text">
+                            <div class="ab-belief-title">The Hope of Christ’s Return</div>
+                            <div class="ab-belief-desc">We eagerly anticipate the return of Jesus Christ to establish His kingdom fully, judge the living and the dead, and make all things new.</div>
+                            <div class="ab-belief-desc">Scripture Reference: Revelation 22:12; 1 Thessalonians 4:16–17.</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="ab-beliefs-right">
+                <div class="ab-beliefs-img-wrap">
+                    <img src="~/images/ourbeliefs.png" alt="Open Bible study" loading="lazy" />
+                    <div class="ab-beliefs-img-caption">
+                        <span>Rooted in Scripture</span>
+                        <em>Est. KPHB · Hyderabad</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── SHARE YOUR STORY ── -->
+    <section id="sec-story" class="ab-section ab-story">
+        <div class="ab-story-inner">
+            <div>
+                <div class="ab-eyebrow" style="color:var(--red);">Share Your Story</div>
+                <h2 class="ab-h2" style="color:#fff;">Your Story<br><em style="color:var(--red);font-style:normal;">Matters</em></h2>
+                <div class="ab-rule"></div>
+                <p class="ab-story-body">Has God done something in your life through The Potters Church? A salvation, a healing, a breakthrough, a restored marriage — we want to hear it. Your story could be the very thing someone else needs to take their next step.</p>
+                <div class="ab-story-form">
+                    <input class="ab-story-input" type="text" placeholder="Your Name" aria-label="Your name" />
+                    <input class="ab-story-input" type="email" placeholder="Your Email" aria-label="Your email" />
+                    <textarea class="ab-story-input ab-story-textarea" placeholder="Tell us your story..." aria-label="Your story"></textarea>
+                    <button class="ab-story-btn" onclick="sendPrompt('I want to share my story with Potters Church')">Submit Your Story ↗</button>
+                </div>
+            </div>
+            <div class="ab-story-right">
+                
+                <img class="ab-story-img" src="~/images/story.png" alt="Church testimony sharing community" loading="lazy" />
+                <div class="ab-story-img-tag">Your Story · God's Glory</div>
+            </div>
+        </div>
+        <div class="ab-story-bg-text" aria-hidden="true">STORY</div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <div class="ab-cta">
+        <div class="ab-cta-text">
+            <span>Ready to take a next step?</span>
+            Let Us Know<br>You're Coming
+        </div>
+        <a class="ab-cta-btn" href="@Url.Action("Welcome","Home")">Next Steps ↗</a>
+    </div>
+
+</div>
+
+
+<script>
+    function scrollTo(id, el){
+      document.getElementById(id).scrollIntoView({behavior:'smooth'});
+      document.querySelectorAll('.ab-nav-item').forEach(n=>n.classList.remove('active'));
+      el.classList.add('active');
+    }
+    // scroll spy
+    const secs=[['sec-teaching',0],['sec-vision',1],['sec-team',2],['sec-beliefs',3],['sec-story',4]];
+    const navItems=document.querySelectorAll('.ab-nav-item');
+    window.addEventListener('scroll',()=>{
+      let cur=0;
+      secs.forEach(([id,i])=>{
+        const el=document.getElementById(id);
+        if(el&&window.scrollY>=el.offsetTop-120)cur=i;
+      });
+      navItems.forEach((n,i)=>n.classList.toggle('active',i===cur));
+    },{passive:true});
+</script>

@@ -1,0 +1,227 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+    Layout = "~/Views/Shared/_HeaderLayout.cshtml";
+}
+
+
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            body {
+                background: #f4f4f4;
+            }
+
+            /* HEADER */
+            .header {
+                background: #ffffff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 40px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            }
+
+            .logo {
+                font-weight: 600;
+                color: #7a1522;
+                font-size: 18px;
+            }
+
+            .verse {
+                font-size: 13px;
+                color: #555;
+                text-align: right;
+            }
+
+            /* HERO SECTION */
+            .hero {
+                background: linear-gradient(rgba(122,21,34,0.9), rgba(122,21,34,0.9)), url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65');
+                background-size: cover;
+                background-position: center;
+                color: white;
+                text-align: center;
+                padding: 80px 20px 120px;
+            }
+
+                .hero h1 {
+                    font-size: 42px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                .hero p {
+                    max-width: 600px;
+                    margin: auto;
+                    font-size: 15px;
+                    opacity: 0.9;
+                }
+
+            /* FORM CARD */
+            .form-container {
+                display: flex;
+                justify-content: center;
+                margin-top: -80px;
+                padding: 20px;
+            }
+
+            .form-card {
+                background: #ffffff;
+                width: 100%;
+                max-width: 600px;
+                border-radius: 15px;
+                padding: 30px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            }
+
+            /* FORM ELEMENTS */
+            .form-group {
+                margin-bottom: 18px;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 6px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            input, textarea {
+                width: 100%;
+                padding: 12px;
+                border-radius: 8px;
+                border: 1px solid #ddd;
+                font-size: 14px;
+            }
+
+            textarea {
+                height: 120px;
+                resize: none;
+            }
+
+            /* BUTTON */
+            .btn {
+                width: 100%;
+                background: #7a1522;
+                color: #ffffff;
+                padding: 14px;
+                border: none;
+                border-radius: 10px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+                .btn:hover {
+                    background: #5e0f18;
+                }
+
+            /* FOOTER TEXT */
+            .footer-note {
+                text-align: center;
+                margin-top: 15px;
+                font-size: 13px;
+                color: #777;
+            }
+
+            /* BOTTOM VERSE */
+            .bottom-verse {
+                text-align: center;
+                margin: 40px 20px;
+                color: #555;
+                font-size: 14px;
+            }
+
+            /* RESPONSIVE */
+            @@media (max-width: 768px) {
+
+                .header {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 5px;
+                }
+
+                .hero {
+                    padding: 60px 15px 100px;
+                }
+
+                    .hero h1 {
+                        font-size: 28px;
+                    }
+
+                .form-card {
+                    padding: 20px;
+                }
+            }
+
+    </style>
+
+
+
+
+    <!-- HEADER -->
+    @* <div class="header">
+        <div class="logo">Potters Church</div>
+        <div class="verse">
+            Call to me and I will answer you <br>
+            <strong>Jeremiah 33:3</strong>
+        </div>
+    </div> *@
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Prayer Request</h1>
+        <p>Share your request with us and our prayer team will stand with you in faith.</p>
+    </div>
+
+    <!-- FORM -->
+    <div class="form-container">
+        <div class="form-card">
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label>Mobile</label>
+                <input type="tel" placeholder="Enter your mobile number">
+            </div>
+
+            <div class="form-group">
+                <label>Address</label>
+                <input type="text" placeholder="Enter your address">
+            </div>
+
+            <div class="form-group">
+                <label>Prayer Request</label>
+                <textarea placeholder="Write your prayer request here..."></textarea>
+            </div>
+
+            <button class="btn">Submit Prayer Request</button>
+
+            <div class="footer-note">
+                Your information is safe with us and will be kept confidential.
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BOTTOM VERSE -->
+    <div class="bottom-verse">
+        Be joyful in hope, patient in affliction, faithful in prayer.<br>
+        <strong>Romans 12:12</strong>
+    </div>
+
+
+```

@@ -1,521 +1,376 @@
 ﻿@{
-	ViewData["Title"] = "Home Page";
-	Layout = "~/Views/Shared/_HeaderLayout.cshtml";
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_HeaderLayout.cshtml";
 }
 
 
 
 <!-- ══ MAIN CONTENT ══ -->
-<div id="ajax-content-wrap">
+<div class="maincontent" id="ajax-content-wrap">
 
-	<!-- ── HERO ── -->
-	<section id="hero">
-		@* <div class="hero-bg" aria-hidden="true"></div> *@
+    <!-- ── HERO ── -->
+    <section id="hero">
+        @* <div class="hero-bg" aria-hidden="true"></div> *@
 
-		<div class="hero-bg" aria-hidden="true">
-			<img src="~/images/img_6124 (2).jpg" class="slide active">
+        <div class="hero-bg" aria-hidden="true">
+            <img src="~/images/img_6124 (2).jpg" class="slide active">
 					
-				<img src="~/images/img_6161.jpg" class="slide" />
+            <img src="~/images/img_6161.jpg" class="slide" />
 						
-			</div>
+        </div>
 
-			<div class="hero-bg-overlay" aria-hidden="true"></div>
-			<div class="hero-content">
-				<a href="https://passioncreek.church/sundays/" class="hero-img-link">
-					<img class="hero-promo"
+        <div class="hero-bg-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+            <a href="@Url.Action("Sundays", "Home")" class="hero-img-link">
+                @* <img class="hero-promo"
 						 src="https://passioncreek.church/wp-content/uploads/2025/12/join-us-sundays-2026.png"
 						 srcset="https://passioncreek.church/wp-content/uploads/2025/12/join-us-sundays-2026-300x281.png 300w,
 					https://passioncreek.church/wp-content/uploads/2025/12/join-us-sundays-2026-768x720.png 768w,
 					https://passioncreek.church/wp-content/uploads/2025/12/join-us-sundays-2026-1024x960.png 1024w,
 					https://passioncreek.church/wp-content/uploads/2025/12/join-us-sundays-2026.png 1920w"
 						 sizes="(max-width: 1920px) 100vw, 1920px"
-						 alt="Join us Sundays 2026">
-				</a>
-				<div class="hero-social">
-					<a href="https://www.instagram.com/potterschurchmedia/#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-					<a href="https://www.facebook.com/tvforchrist" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-square"></i></a>
-					<a href="https://www.youtube.com/@@Potterschurchmedia" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-				</div>
-			</div>
-		</section>
+                     alt="Join us Sundays 2026"> *@
+                
+                <img class="hero-promo" src="~/images/join-us-sundays-2026-potters-transparent.png" />
+            </a>
+            <div class="hero-social">
+                <a href="https://www.instagram.com/potterschurchmedia/#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/tvforchrist" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="https://www.youtube.com/@@Potterschurchmedia" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
 
-		<!-- ── PAGE SUB-MENU ── -->
-		<nav class="page-submenu" aria-label="Section Navigation">
-			<div class="submenu-inner">
-				<button class="mobile-submenu-link" id="submenu-toggle" aria-expanded="false">
-					<i class="fa fa-bars"></i> Menu
-				</button>
-				<ul id="submenu-list">
-					<li><a href="#new">New? Start Here</a></li>
-					<li><a href="#sundays">Sundays</a></li>
-					<li><a href="#groups">Groups</a></li>
-					<li><a href="#practices">Practices</a></li>
-					<li><a href="#events">Events</a></li>
-				</ul>
-			</div>
-		</nav>
+    <!-- ── PAGE SUB-MENU ── -->
+    <nav class="page-submenu" aria-label="Section Navigation">
+        <div class="submenu-inner">
+            <button class="mobile-submenu-link" id="submenu-toggle" aria-expanded="false">
+                <i class="fa fa-bars"></i> Menu
+            </button>
+            <ul id="submenu-list">
+                <li><a href="#new">New? Start Here</a></li>
+                <li><a href="#sundays">Sundays</a></li>
+                <li><a href="#groups">Groups</a></li>
+                <li><a href="#Series">Sermons</a></li>
+                <li><a href="#events">Events</a></li>
+            </ul>
+        </div>
+    </nav>
 
-		<!-- ── NEW HERE ── -->
-		<section id="new">
-			<div class="new-header">
-				<div class="nectar-animated-title"><h3>New Here?</h3></div>
-				<h2>Consider Our 3 Invitations</h2>
-			</div>
+    <!-- ── NEW HERE ── -->
+    <section id="new">
+        <div class="new-header">
+            <div class="nectar-animated-title"><h3>New Here?</h3></div>
+            <h2>Consider Our 3 Invitations</h2>
+        </div>
 
-			<div class="two-col">
-				<!-- LEFT: Toggles -->
-				<div class="toggles-wrap">
+        <div class="two-col">
+            <!-- LEFT: Toggles -->
+            <div class="toggles-wrap">
 
-					<!-- Toggle 1 -->
-					<div class="toggle-item open">
-						<button class="toggle-heading" aria-expanded="true">
-							1. you are welcome here
-						</button>
-						<div class="toggle-body">
-							<!-- Video Box -->
-							<div class="nectar-video-box" data-video="https://youtu.be/wy4_ljLM1MY?si=UQsE8qBbs_AzjOcu">
-								<img src="https://passioncreek.church/wp-content/uploads/2026/01/pyv-pcc-2026.jpg"
-									 srcset="https://passioncreek.church/wp-content/uploads/2026/01/pyv-pcc-2026-300x169.jpg 300w,
-								https://passioncreek.church/wp-content/uploads/2026/01/pyv-pcc-2026-768x432.jpg 768w,
-								https://passioncreek.church/wp-content/uploads/2026/01/pyv-pcc-2026-1024x576.jpg 1024w,
-								https://passioncreek.church/wp-content/uploads/2026/01/pyv-pcc-2026.jpg 1920w"
-									 sizes="(max-width:1920px) 100vw, 1920px"
-									 alt="Plan Your Visit">
-								<div class="play-btn-overlay">
-									<div class="play-btn">
-										<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-									</div>
-								</div>
-							</div>
-							<p>The most important thing about Potter's Church is not what makes us distincts - it's what we share in common with every other true church.Still, each congregation will inevitably have its voice and vibe. We pray they will be the very heartbeat of our church, the core of our life together</p>
-							<a class="nectar-btn outline-accent btn-arrow" href="https://passioncreek.church/sundays/">Connect With Us</a>
-						</div>
-					</div>
+                <!-- Toggle 1 -->
+                <div class="toggle-item open">
+                    <button class="toggle-heading" aria-expanded="true">
+                        1. Sunday Services
+                    </button>
+                    <div class="toggle-body">
+                        <!-- Video Box -->
+                        <div class="nectar-video-box" data-video="https://www.youtube.com/watch?v=JX_GDTTD96Q">
+                            
+                            
+                            
+                            <img src="https://img.youtube.com/vi/SeJLTaARXCg/maxresdefault.jpg" sizes="(max-width:1920px) 100vw, 1920px"
+                                 alt="Plan Your Visit" />
+									
+                            <div class="play-btn-overlay">
+                                <div class="play-btn">
+                                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            You are warmly invited to join us this Sunday at Potter's Church!
+                            Come and experience uplifting worship, powerful prayer, and God's Word.
+                            Bring your family and friends for a blessed time of fellowship.
+                            Let us grow together in faith, hope, and love in Christ.
+                            We look forward to welcoming you with joy and love!
+                        </p>
+                        <a class="nectar-btn outline-accent btn-arrow" href="@Url.Action("welcome", "Home")">Connect With Us</a>
+                    </div>
+                </div>
 
-					<!-- Toggle 2 -->
-					<div class="toggle-item">
-						<button class="toggle-heading" aria-expanded="false">
-							2. Bible Study
-						</button>
-						<div class="toggle-body">
-							<div class="nectar-video-box" data-video="https://youtu.be/sSVcMD47FjQ?si=AioMugnXagzRmonr">
-								<img src="https://passioncreek.church/wp-content/uploads/2025/08/takechallenge.jpg"
-									 srcset="https://passioncreek.church/wp-content/uploads/2025/08/takechallenge-300x169.jpg 300w,
-								https://passioncreek.church/wp-content/uploads/2025/08/takechallenge-768x432.jpg 768w,
-								https://passioncreek.church/wp-content/uploads/2025/08/takechallenge-1024x576.jpg 1024w,
-								https://passioncreek.church/wp-content/uploads/2025/08/takechallenge.jpg 1920w"
-									 sizes="(max-width:1920px) 100vw, 1920px"
-									 alt="Stick Six Challenge">
-								<div class="play-btn-overlay">
-									<div class="play-btn">
-										<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-									</div>
-								</div>
-							</div>
-							<p>Bible study is a big deal in the Christian life—not just reading, but really understanding and applying it.</p>
-							<p>That's why we're inviting you to take the <strong>Bible Study</strong>: commit to attending <strong>every Tuesday in a week</strong> and see what God might do.</p>
-							<p>Just like food strengthens the body, the Word strengthens the spirit.</p>
-						</div>
-					</div>
+                <!-- Toggle 2 -->
+                <div class="toggle-item">
+                    <button class="toggle-heading" aria-expanded="false">
+                        2. Bible Study
+                    </button>
+                    <div class="toggle-body">
+                        <div class="nectar-video-box" data-video="https://www.youtube.com/watch?v=NS_dZu4-LB8&list=PL_GJ_zjG0_T5ZRW6RJsbs-DTPoYv_0Kee">
+                            <img src="https://img.youtube.com/vi/NS_dZu4-LB8/maxresdefault.jpg" sizes="(max-width:1920px) 100vw, 1920px"
+                                 alt="Stick Six Challenge" />
+                            
+                            <div class="play-btn-overlay">
+                                <div class="play-btn">
+                                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Bible study is a big deal in the Christian life—not just reading, but really understanding and applying it.</p>
+                        <p>That's why we're inviting you to take the <strong>Bible Study</strong>: commit to attending <strong>every Tuesday in a week</strong> and see what God might do.</p>
+                        <p>Just like food strengthens the body, the Word strengthens the spirit.</p>
+                    </div>
+                </div>
 
-					<!-- Toggle 3 -->
-					<div class="toggle-item">
-						<button class="toggle-heading" aria-expanded="false">
-							3. Prayer Request
-						</button>
-						<div class="toggle-body">
+                <!-- Toggle 3 -->
+                <div class="toggle-item">
+                    <button class="toggle-heading" aria-expanded="false">
+                        3. Prayer Request
+                    </button>
+                    <div class="toggle-body">
+
 							
-							
-							<p>We believe in the <strong> power of prayer. </strong> </p>
-							<p>Share your prayer request with us, and our church family will pray for you.</p>
-							<div class="divider"></div>
-							<a class="nectar-btn outline-accent btn-arrow" href="#" target="_blank"> Prayer Request </a>
-						</div>
-					</div>
+                        <p>We believe in the <strong> power of prayer. </strong> </p>
+                        <p>Share your prayer request with us, and our church family will pray for you.</p>
+                        <div class="divider"></div>
+                        <a class="nectar-btn outline-accent btn-arrow" href="@Url.Action("welcome", "Home")" target="_blank"> Prayer Request </a>
+                    </div>
+                </div>
 
-				</div><!-- /.toggles-wrap -->
-				<!-- RIGHT: Singer image -->
-				<div >
-					<div class="circle-bg" aria-hidden="true"></div>
-					<img class="rightfirstimage" src="~/images/rightimage.jpeg" />
+            </div><!-- /.toggles-wrap -->
+            <!-- RIGHT: Singer image -->
+            <div>
+                <div class="circle-bg" aria-hidden="true"></div>
+                <img class="rightfirstimage" src="~/images/invitephoto.png" />
+                
 						
-				</div>
+            </div>
 
-			</div><!-- /.two-col -->
-		</section><!-- /#new -->
-		<!-- ── SUNDAYS ── -->
-		<section id="sundays">
-			<div class="sundays-left">
-				<div class="sundays-left-inner fade-in-up">
-					<div class="nectar-animated-title"><h3>Sunday Gathering</h3></div>
-					<div class="divider"></div>
-					<h2>Sundays at 8:00am; 10:30am &amp ;6:00pm</h2>
-					<div class="divider"></div>
-					<address>
-						<a href="https://goo.gl/maps/gZQeLTGx6csLXU3U9" target="_blank" rel="noopener">
-							The Potter's Church<br>
-							KPHB 5th Phase, Kukatpally Housing Board Colony<br>
-								Hyderabad, Telangana 500072
-						</a>
-					</address>
-					<div class="divider"></div>
-					<div class="divider"></div>
-					<p>We gather weekly to sing together, learn from the Scriptures, serve one another, and make space for God's grace.</p>
-					<div class="btn-row">
-						<a class="nectar-btn outline-accent btn-arrow" href="#">More Information</a>
+        </div><!-- /.two-col -->
+    </section><!-- /#new -->
+    <!-- ── SUNDAYS ── -->
+    <section id="sundays">
+        <div class="sundays-left">
+            <div class="sundays-left-inner fade-in-up">
+                <div class="nectar-animated-title"><h3>Sunday Gatherings</h3></div>
+                <div class="divider"></div>
+                <h2>Sundays at 8:00am; 10:30am &amp ;6:00pm</h2>
+                <div class="divider"></div>
+                <address>
+                    <a href="https://maps.app.goo.gl/cKBbq8Tr2CbMQGUc8" target="_blank" rel="noopener">
+                        The Potter's Church<br>
+                        KPHB 5th Phase, Kukatpally Housing Board Colony<br>
+                        Hyderabad, Telangana 500072
+                    </a>
+                </address>
+                <div class="divider"></div>
+                <div class="divider"></div>
+                <p>We gather weekly to sing together, learn from the Scriptures, serve one another, and make space for God's grace.</p>
+                <div class="btn-row">
+                    <a class="nectar-btn outline-accent btn-arrow" href="@Url.Action("Sundays", "Home")">More Information</a>
 						
-					</div>
-				</div>
-			</div>
-			<div class="sundays-right" aria-label="Sunday gathering photo" role="img"></div>
-		</section>
+                </div>
+            </div>
+        </div>
+        <div class="sundays-right" aria-label="Sunday gathering photo" role="img"></div>
+    </section>
 
-		<!-- ── GROUPS ── -->
-		<section id="groups">
-			<div class="groups-left" aria-label="Community group photo" role="img"></div>
-			<div class="groups-right">
-				<div class="groups-right-inner fade-in-up">
-					<div class="divider"></div><div class="divider"></div>
-					<div class="nectar-animated-title"><h3>FASTING & PRAYER</h3></div>
-					<h2>Seek God Together</h2>
-					<p><a class="follow-link" href="#">Draw closer to God through prayer and fasting</a></p>
-					<div class="divider"></div>
-					<p>We come together to humble ourselves before God, seek His presence, and align our hearts with His will. Through fasting and prayer, we grow spiritually, intercede for others, and experience His power in our lives.</p>
-					<div class="btn-row">
-						<a class="nectar-btn outline-accent btn-arrow" href="#">More Information</a>
-						<a class="nectar-btn fill-accent btn-arrow" href="#" target="_blank">Join a Group</a>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- ── GROUPS ── -->
+    <section id="groups">
+        <div class="groups-left" aria-label="Community group photo" role="img"></div>
+        <div class="groups-right">
+            <div class="groups-right-inner fade-in-up">
+                <div class="divider"></div><div class="divider"></div>
+                <div class="nectar-animated-title"><h3>FASTING & PRAYER</h3></div>
+                <h2>Seek God Together</h2>
+                <p><a class="follow-link" href="#">Draw closer to God through prayer and fasting</a></p>
+                <div class="divider"></div>
+                <p>We come together to humble ourselves before God, seek His presence, and align our hearts with His will. Through fasting and prayer, we grow spiritually, intercede for others, and experience His power in our lives.</p>
+                <div class="btn-row">
+                    <a class="nectar-btn outline-accent btn-arrow" target="_blank" href="https://www.youtube.com/playlist?list=PL_GJ_zjG0_T5vplD5kPgBio2MDCA6vJqw">Fasting Prayer Sessions</a>
+                    <a class="nectar-btn fill-accent btn-arrow" href="@Url.Action("welcome", "home")" target="_blank">Join a Group</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- ── PRACTICES ── -->
-		<section id="practices">
-			<div class="practices-img-col fade-in-up">
-				<a href="https://www.youtube.com/@@formedbyJesus" target="_blank" rel="noopener">
-					<img src="https://passioncreek.church/wp-content/uploads/2024/01/formed-podcast-2024-scaled.jpg"
-						 srcset="https://passioncreek.church/wp-content/uploads/2024/01/formed-podcast-2024-300x300.jpg 300w,
-					https://passioncreek.church/wp-content/uploads/2024/01/formed-podcast-2024-768x768.jpg 768w,
-					https://passioncreek.church/wp-content/uploads/2024/01/formed-podcast-2024-1024x1024.jpg 1024w,
-					https://passioncreek.church/wp-content/uploads/2024/01/formed-podcast-2024-scaled.jpg 2560w"
-						 sizes="(max-width:2560px) 100vw, 2560px"
-						 alt="Formed by Jesus Podcast"
-						 style="border-radius:20px;">
-				</a>
-				<div class="reveal-badge"></div>
-			</div>
+   
 
-			<div class="practices-text-col fade-in-up">
-				<ul class="fancy-ul">
-					<li>Every stage of life</li>
-					<li>Every stage of maturity</li>
-					<li>Every stage of the practice</li>
-				</ul>
+    <section id="Series">
+        <div class="section">
+            <div class="section-label">Worship Series</div>
+            <div class="section-title">Last Sunday Sermon</div>
+            <div class="section-sub">Explore our latest sermon series and let the Word of God speak into your life today.</div>
+            <div class="dividers"></div>
 
-				<div class="nectar-animated-title"><h3>The Practices</h3></div>
-				<h2>Hear stories about the practices<br>from people just like you</h2>
+            <div class="cards-grid" id="mainCards">
+                <div class="card">
+                    <div class="card-thumb">
+                        
+                        <img id="mainImg" src="https://img.youtube.com/vi/btp-1YIe6JQ/hqdefault.jpg" alt="Sermon video thumbnail" />
+                        <div class="thumb-overlay">
+                            <a class="play-btn" href="https://www.youtube.com/watch?v=bjcLdgfSiMo&list=PL_GJ_zjG0_T5eIlTBCaB4E6TvWf__gx9l&index=2" target="_blank" rel="noopener"> <span class="play-icon"></span></a>
+                            
+                        </div>
+                    </div>
 
-				<div class="btn-row">
-					<a class="nectar-btn outline-white btn-arrow" href="https://formedbyjesus.com" target="_blank" rel="noopener">Learn the Practices</a>
-					<div class="divider" style="height:20px;width:100%;"></div>
-					<a class="nectar-btn fill-white-accent btn-arrow" href="https://www.youtube.com/@@formedbyJesus" target="_blank" rel="noopener" style="color:var(--accent);">Watch the Podcast</a>
-				</div>
+                    <div class="card-body">
+                        <div class="card-tag" id="videoTag">Series 01 · May 2025</div>
+                        <div class="card-title" id="videoTitle">Alters Throughout The Scriptures</div>
+                        <div class="card-desc" id="videoDesc">A journey through Scripture: where worship brought blessing and where it broke — and what it means for us today.</div>
+                        <div class="card-meta" id="videoMeta"><span>🕐 42 min</span><span>📖 Genesis 12 · Romans 12</span></div>
+                        <button class="card-action">WATCH NOW →</button>
+                    </div>
+                </div>
 
-				<div class="practices-social-icons">
-					<a href="https://www.youtube.com/@@formedbyJesus" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-					<a href="https://open.spotify.com/show/3MVdD5DkhQNlixGsGgnpid" target="_blank" rel="noopener" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
-					<a href="https://podcasts.apple.com/us/podcast/formed-by-jesus-podcast/id1672165856" target="_blank" rel="noopener" aria-label="Apple Podcasts"><i class="fa-solid fa-podcast"></i></a>
-				</div>
-			</div>
-		</section>
+                <div class="card">
+                    @*  <div style="background-image:url(~/images/sermon-notes.jpg)" class="thumb-notes">
+                        
+                        <span style="font-size:38px;">📄</span>
+                        <span class="thumb-label" style="color:#c9a84c99;">Sermon Notes</span>
+                    </div> *@
+                    <div style="background-image:url('@Url.Content("~/images/sermon-notes.jpg")');   background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: contain;" class="thumb-notes">
+                        @* <span style="font-size:38px;">📄</span>
+                        <span class="thumb-label" style="color:#c9a84c99;">Sermon Notes</span> *@
+                    </div>
+                    <div class="card-body">
+                        <div class="card-tag" id="notesTag">Sermon Notes · May 2025</div>
+                        <div class="card-title" id="notesTitle">Alters Throughout The Scriptures</div>
+                        <ul class="notes-list" id="notesList">
+                            <li>Altars represent points of surrender and encounter with God</li>
+                            <li>From Abraham to Elijah — every altar was a turning point</li>
+                            <li>What altars in your own life need to be rebuilt?</li>
+                            <li>Key verse: Romans 12:1 — offer yourself as a living sacrifice</li>
+                        </ul>
+                        <button class="download-btn">⬇ Download PDF Notes</button>
+                    </div>
+                </div>
+            </div>
 
-		<!-- ── EVENTS ── -->
-		 <section id="events">
-			<div class="events-header">
-				<div class="nectar-animated-title" style="display:inline-block;"><h3 style="color:#fff;">Upcoming Events</h3></div>
-			</div>
-			<!-- Subsplash embed (third-party, non-WordPress) -->
-			<div class="events-embed-wrap">
-				 <script id="subsplash-embed-dg7y4p6" type="text/javascript">
-					var target = document.getElementById("subsplash-embed-dg7y4p6");
-					var script = document.createElement("script");
-					script.type = "text/javascript";
-					script.onload = function() {
-					subsplashEmbed( "+f31f/lb/ca/+dg7y4p6?embed&branding", "https://subsplash.com/", "subsplash-embed-dg7y4p6" );
-					};
-					script.src = "https://dashboard.static.subsplash.com/production/web-client/external/embed-1.1.0.js";
-					target.parentElement.insertBefore(script, target);
-				</script> 
-				@* <main class="route-app__wrap route-app__wrap--embed ">
-					<div id="ember87" class="kit-snackbar ember-view"><!----></div>
-					<!---->
-					<!---->
-					<div class="route-app__content-wrap">
+          
 
-						<!---->
-						<div id="ember88" class="app-list-content ember-view">
-							<div id="ember90" class="app-link-to ember-view">
-								<a href="/+f31f/lb/ev/+7jsx4t5?branding=true&amp;embed=true" id="ember91" class="ember-view">
-    
-									<div id="ember92" class="kit-list-item ember-view">
-										<div class="kit-list-item__image-wrap">
-  
-											<div style="padding-top: 56.25%;background-color: #7f696c;border-radius: 3px;" id="ember93" class="kit-image kit-image--default kit-image--depth ember-view">
-												<div class="kit-image__watermark">
-													<img class="kit-image__watermark-image" src="https://images.subsplash.com/fit-white.png?id=8c4115d9-8be7-4ce0-b073-d30b2924d5d7&amp;w=240&amp;h=240">
-												</div>
+            <div class="series-section">
+                <div class="series-label"><span>All Sermons</span></div>
+                <div class="series-cards">
+                    <div class="s-card active" onclick="selectSermon(0)" id="sc0">
+                        <div class="s-thumb">
+                            <img id="mainImg" src="https://img.youtube.com/vi/btp-1YIe6JQ/hqdefault.jpg" alt="Sermon video thumbnail" />
+                            <div class="s-thumb-overlay"><div class="s-play"><span class="s-play-icon"></span></div></div>
+                        </div>
+                        <div class="s-body">
+                            <div class="s-num">Sermon 01</div>
+                            <div class="s-title">Alters Throughout The Scriptures</div>
+                            <div class="s-date">May 2025 · 6 Parts</div>
+                            <div class="active-badge">NOW SHOWING</div>
+                        </div>
+                    </div>
+                    <div class="s-card" onclick="selectSermon(1)" id="sc1">
+                        <div class="s-thumb">
+                            <img id="mainImg" src="https://img.youtube.com/vi/GI64CPsn2V4/hqdefault.jpg" alt="Sermon video thumbnail" />
+                            <div class="s-thumb-overlay"><div class="s-play"><span class="s-play-icon"></span></div></div>
+                        </div>
+                        <div class="s-body">
+                            <div class="s-num">Sermon 02</div>
+                            <div class="s-title">Teach Us To Pray</div>
+                            <div class="s-date">Apr 2025 · 4 Parts</div>
+                            <div class="active-badge">NOW SHOWING</div>
+                        </div>
+                    </div>
+                    <div class="s-card" onclick="selectSermon(2)" id="sc2">
+                        <div class="s-thumb">
+                            <img id="mainImg" src="https://img.youtube.com/vi/GI64CPsn2V4/hqdefault.jpg" alt="Sermon video thumbnail" />
+                            <div class="s-thumb-overlay"><div class="s-play"><span class="s-play-icon"></span></div></div>
+                        </div>
+                        <div class="s-body">
+                            <div class="s-num">Sermon 03</div>
+                            <div class="s-title">The Upsidedown Kingdom</div>
+                            <div class="s-date">Mar 2025 · 5 Parts</div>
+                            <div class="active-badge">NOW SHOWING</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-												<img class="kit-image__image" src="https://images.subsplash.com/image.jpg?id=f9a19f33-7c94-474a-a5bb-1183371ae968&amp;w=400&amp;h=225" style="opacity: 1;">
-												<!---->
-											</div>
-											<div class="app-list-content__date-overlay">
-												<div class="app-list-content__date-overlay-month">
-													Jan
-												</div>
-												<div class="app-list-content__date-overlay-date">
-													18
-												</div>
-											</div>
-              
-										</div>
+   
 
-										<div class="kit-list-item__text">
-											<h2 class="kit-list-item__title">Together Groups</h2>
+    <section id="events" class="events-section">
 
-											<h3 class="kit-list-item__subtitle">January 18 - May 30, 2026 MST</h3>
+        <div class="section-heading">
+            <div class="heading-badge">Upcoming Events</div>
+        </div>
 
-											<!---->
-											<p class="kit-list-item__summary">We meet weekly to share a meal together, pray together, discuss how God is moving in our lives, and engage in the practices together.</p>
-										</div>
-									</div>
-    
-								</a>
-							</div>
-							<div id="ember95" class="app-link-to ember-view">
-								<a href="/+f31f/lb/ev/+y2kj73y?branding=true&amp;embed=true" id="ember96" class="ember-view">
-    
-									<div id="ember97" class="kit-list-item ember-view">
-										<div class="kit-list-item__image-wrap">
-  
-											<div style="padding-top: 56.25%;background-color: #e6e6e6;border-radius: 3px;" id="ember98" class="kit-image kit-image--default kit-image--depth ember-view">
-												<div class="kit-image__watermark">
-													<img class="kit-image__watermark-image" src="https://images.subsplash.com/fit-white.png?id=8c4115d9-8be7-4ce0-b073-d30b2924d5d7&amp;w=240&amp;h=240">
-												</div>
+        <div class="events-list">
 
-												<img class="kit-image__image" src="https://images.subsplash.com/image.jpg?id=96390857-6486-46da-83be-548a54e6d112&amp;w=400&amp;h=225" style="opacity: 1;">
-												<!---->
-											</div>
-											<div class="app-list-content__date-overlay">
-												<div class="app-list-content__date-overlay-month">
-													Apr
-												</div>
-												<div class="app-list-content__date-overlay-date">
-													3
-												</div>
-											</div>
-              
-										</div>
+            <!-- Card 1 -->
+            <div class="event-card">
+                <div class="event-thumb">
+                    <img src="~/images/baptism.jpg" />
+                
+                    <div class="thumb-title">Baptism <br>classes</div>
+                    <div class="date-badge"><span class="month">June</span><span class="day">01</span></div>
+                </div>
+                <div class="event-body">
+                    <h3>Baptism classes</h3>
+                    <p class="event-meta">From June 1st - Every Monday,Wednesday,saturday for a week</p>
+                    <p class="event-desc">Baptism classes prepare individuals and parents to understand the spiritual significance of the sacrament before receiving it.</p>
+                    <button onclick="window.location.href= '@Url.Action("EventsRegistration", "Home")'" class="register-btn">Register Now</button>
+                </div>
+            </div>
 
-										<div class="kit-list-item__text">
-											<h2 class="kit-list-item__title">Consecrate | Good Friday Service</h2>
+            <!-- Card 2 -->
+            <div class="event-card">
+                <div class="event-thumb">
+                    <img src="~/images/membership.jpg" />
+                    <div class="thumb-title">MemberShip<br>Classes</div>
+                
+                    <div class="date-badge"><span class="month">June</span><span class="day">6</span></div>
+                </div>
+                <div class="event-body">
+                    <h3>Membership Classes </h3>
+                    <p class="event-meta">June 6th,13th & July 4th,11th</p>
+                    <p class="event-desc">
+                        Church membership classes help individuals understand a church’s beliefs, values, and expectations before officially joining the congregation.
+                        They also encourage spiritual growth, community involvement, and commitment to serving within the church.
+                    </p>
+                    <button onclick="window.location.href= '@Url.Action("EventsRegistration", "Home")'" class="register-btn">Register Now</button>
+                </div>
+            </div>
 
-											<h3 class="kit-list-item__subtitle">April 3, 2026 from 6:00 - 7:00pm MST</h3>
+            <!-- Card 3 -->
+            <div class="event-card">
+                <div class="event-thumb">
+                    <img src="~/images/fastingprayer.jpg" />
+                    <div class="thumb-title">Fasting <br>Prayer</div>
+                    <div class="date-badge"><span class="month">June</span><span class="day">2</span></div>
+                </div>
+                <div class="event-body">
+                    <h3>Fasting Prayer</h3>
+                    <p class="event-meta">June 2nd</p>
+                    <p class="event-desc">Fasting prayer is a spiritual practice where believers abstain from food or other distractions to focus more deeply on prayer, worship, and seeking God’s guidance.</p>
+                    <button onclick="window.location.href= '@Url.Action("EventsRegistration", "Home")'" class="register-btn">Register Now</button>
+                </div>
+            </div>
 
-											<!---->
-											<p class="kit-list-item__summary">
-												Join us for a special Good Friday gathering called&nbsp;Consecrate&nbsp;as we step onto our church property together for the first time to worship and pray.
+            <!-- Card 4 -->
+            <div class="event-card">
+                <div class="event-thumb">
+                    <img src="~/images/fandf.jpg" />
+                    <div class="thumb-title">Friends<br>& Family Sunday</div>
+                    <div class="date-badge"><span class="month">June</span><span class="day">14</span></div>
+                </div>
+                <div class="event-body">
+                    <h3>Friends & Family Sunday</h3>
+                    <p class="event-meta">June 14th</p>
+                    <p class="event-desc">Friends and Family Sunday is a special church gathering that encourages members to invite loved ones to worship, fellowship, and experience the church community together</p>
+                    <button onclick="window.location.href= '@Url.Action("EventsRegistration", "Home")'" class="register-btn">Register Now</button>
+                </div>
+            </div>
 
-
-												On this sacred evening, we will consecrate the land to the Lord, reflecting on the sacrifice of Jesus through worship, Scripture, and communion. As we remember the passion of Christ, we will also look forward with faith to the future God is preparing for our church and our city.
-
-
-												This will be a simple but meaningful hour of worship and prayer as we dedicate this place and ourselves to God’s purposes.
-
-
-												Come ready to reflect, worship, and seek the presence of God together.
-											</p>
-										</div>
-									</div>
-    
-								</a>
-							</div>
-							<div id="ember100" class="app-link-to ember-view">
-								<a href="/+f31f/lb/ev/+x89pdvw?branding=true&amp;embed=true" id="ember101" class="ember-view">
-    
-									<div id="ember102" class="kit-list-item ember-view">
-										<div class="kit-list-item__image-wrap">
-  
-											<div style="padding-top: 56.25%;background-color: #779e8e;border-radius: 3px;" id="ember103" class="kit-image kit-image--default kit-image--depth ember-view">
-												<div class="kit-image__watermark">
-													<img class="kit-image__watermark-image" src="https://images.subsplash.com/fit-white.png?id=8c4115d9-8be7-4ce0-b073-d30b2924d5d7&amp;w=240&amp;h=240">
-												</div>
-
-												<img class="kit-image__image" src="https://images.subsplash.com/image.jpg?id=e9a777cd-460c-4be9-a528-4873e7674e71&amp;w=400&amp;h=225" style="opacity: 1;">
-												<!---->
-											</div>
-											<div class="app-list-content__date-overlay">
-												<div class="app-list-content__date-overlay-month">
-													Apr
-												</div>
-												<div class="app-list-content__date-overlay-date">
-													5
-												</div>
-											</div>
-              
-										</div>
-
-										<div class="kit-list-item__text">
-											<h2 class="kit-list-item__title">Easter Sunday</h2>
-
-											<h3 class="kit-list-item__subtitle">April 5, 2026 MST</h3>
-
-											<!---->
-											<p class="kit-list-item__summary">
-												Celebrate Easter with Us!
-												Sunday, April 5 | Services at 8:30am or 10:15am
-
-
-												Join us for a powerful Easter celebration at Passion Creek Church!
-											</p>
-										</div>
-									</div>
-    
-								</a>
-							</div>
-							<div id="ember105" class="app-link-to ember-view">
-								<a href="/+f31f/lb/ev/+4brmhm5?branding=true&amp;embed=true" id="ember106" class="ember-view">
-    
-									<div id="ember107" class="kit-list-item ember-view">
-										<div class="kit-list-item__image-wrap">
-  
-											<div style="padding-top: 56.25%;background-color: #d59194;border-radius: 3px;" id="ember108" class="kit-image kit-image--default kit-image--depth ember-view">
-												<div class="kit-image__watermark">
-													<img class="kit-image__watermark-image" src="https://images.subsplash.com/fit-white.png?id=8c4115d9-8be7-4ce0-b073-d30b2924d5d7&amp;w=240&amp;h=240">
-												</div>
-
-												<img class="kit-image__image" src="https://images.subsplash.com/image.jpg?id=cccd4a67-e8c0-4ad8-af2c-ddcaf71b0c8b&amp;w=400&amp;h=225" style="opacity: 1;">
-												<!---->
-											</div>
-											<div class="app-list-content__date-overlay">
-												<div class="app-list-content__date-overlay-month">
-													Apr
-												</div>
-												<div class="app-list-content__date-overlay-date">
-													12
-												</div>
-											</div>
-              
-										</div>
-
-										<div class="kit-list-item__text">
-											<h2 class="kit-list-item__title">Start Here Class</h2>
-
-											<h3 class="kit-list-item__subtitle">April 12, 2026 MST</h3>
-
-											<!---->
-											<p class="kit-list-item__summary">
-												If you’re new at our church, we want you to feel at home. On the first Sunday of the month, you are invited to spend some time with Pastor Trey &amp; Pastor Caleb.
-
-
-												In a span of 20 minutes, we will give you free snacks and an overview of life at Passion Creek. We want this to be short to honor your time but you are more than welcome to stick around and ask more questions.
-											</p>
-										</div>
-									</div>
-    
-								</a>
-							</div>
-							<div id="ember110" class="app-link-to ember-view">
-								<a href="/+f31f/lb/ev/+6s7gmzq?branding=true&amp;embed=true" id="ember111" class="ember-view">
-    
-									<div id="ember112" class="kit-list-item ember-view">
-										<div class="kit-list-item__image-wrap">
-  
-											<div style="padding-top: 56.25%;background-color: #838181;border-radius: 3px;" id="ember113" class="kit-image kit-image--default kit-image--depth ember-view">
-												<div class="kit-image__watermark">
-													<img class="kit-image__watermark-image" src="https://images.subsplash.com/fit-white.png?id=8c4115d9-8be7-4ce0-b073-d30b2924d5d7&amp;w=240&amp;h=240">
-												</div>
-
-												<img class="kit-image__image" src="https://images.subsplash.com/image.jpg?id=b855b1ab-4d1f-4473-8014-a77cc9913706&amp;w=400&amp;h=225" style="opacity: 1;">
-												<!---->
-											</div>
-											<div class="app-list-content__date-overlay">
-												<div class="app-list-content__date-overlay-month">
-													Apr
-												</div>
-												<div class="app-list-content__date-overlay-date">
-													19
-												</div>
-											</div>
-              
-										</div>
-
-										<div class="kit-list-item__text">
-											<h2 class="kit-list-item__title">Stay Here Class</h2>
-
-											<h3 class="kit-list-item__subtitle">April 19, 2026 MST</h3>
-
-											<!---->
-											<p class="kit-list-item__summary">Stay Here is designed to help you take your next steps at Passion Creek so you can make our church your home. First, you will learn how we live life together as disciples of Jesus and be given the opportunity to join one of our Together Groups. You’ll also learn about the serving opportunities at Passion Creek so you can use your gifts and passions to further the kingdom.</p>
-										</div>
-									</div>
-    
-								</a>
-							</div>
-							<div id="ember115" class="app-link-to ember-view">
-								<a href="/+f31f/lb/ev/+5bgtq6m?branding=true&amp;embed=true" id="ember116" class="ember-view">
-    
-									<div id="ember117" class="kit-list-item ember-view">
-										<div class="kit-list-item__image-wrap">
-  
-											<div style="padding-top: 56.25%;background-color: #575f62;border-radius: 3px;" id="ember118" class="kit-image kit-image--default kit-image--depth ember-view">
-												<div class="kit-image__watermark">
-													<img class="kit-image__watermark-image" src="https://images.subsplash.com/fit-white.png?id=8c4115d9-8be7-4ce0-b073-d30b2924d5d7&amp;w=240&amp;h=240">
-												</div>
-
-												<img class="kit-image__image" src="https://images.subsplash.com/image.jpg?id=eb6bf18f-df91-4855-b372-df2209faca10&amp;w=400&amp;h=225" style="opacity: 1;">
-												<!---->
-											</div>
-											<div class="app-list-content__date-overlay">
-												<div class="app-list-content__date-overlay-month">
-													Jun
-												</div>
-												<div class="app-list-content__date-overlay-date">
-													29
-												</div>
-											</div>
-              
-										</div>
-
-										<div class="kit-list-item__text">
-											<h2 class="kit-list-item__title">Zona Youth Camp</h2>
-
-											<h3 class="kit-list-item__subtitle">June 29 - July 3, 2026 MST</h3>
-
-											<!---->
-											<p class="kit-list-item__summary">
-												From structured activities to meaningful worship, every day at Zona Camp is designed to deepen your relationship with Jesus and inspire you to share His love.
-
-
-												Registration begins in January.
-												$349 (Early Bird Rate)
-												$399 (Regular Rate)&nbsp;
-
-											</p>
-										</div>
-									</div>
-    
-								</a>
-							</div>
-
-						</div>
-
-						<div id="ember119" class="u__mt--xxl kit-pagination ember-view"><!----></div>
-					</div>
-
-					<!---->
-				</main> *@
-			</div>
-		</section> 
+        </div>
+    </section>
 
 		
 
@@ -523,8 +378,100 @@
 
 
 
-	</div><!-- /#ajax-content-wrap -->
+</div><!-- /#ajax-content-wrap -->
+
+<script>
+    const sermons = [
+      {
+        img: "https://img.youtube.com/vi/btp-1YIe6JQ/hqdefault.jpg",
+        tag: "Sermon 01 · May 2025", title: "Alters Throughout The Scriptures",
+        desc: "A journey through Scripture: where worship brought blessing and where it broke — and what it means for us today.",
+        meta: [["🕐 42 min"], ["📖 Genesis 12 · Romans 12"]],
+        notesTag: "Sermon Notes · May 2025",
+        notes: ["Altars represent points of surrender and encounter with God","From Abraham to Elijah — every altar was a turning point","What altars in your own life need to be rebuilt?","Key verse: Romans 12:1 — offer yourself as a living sacrifice"],
+        thumbLabel: "Sermon 01 · Video"
+      },
+      {
+        img: "https://img.youtube.com/vi/GI64CPsn2V4/hqdefault.jpg",
+        tag: "Sermon 02 · Apr 2025", title: "Teach Us To Pray",
+        desc: "The Prayer of Jesus (John 17) — when Jesus lifted up his eyes to heaven and spoke directly to the Father.",
+        meta: [["🕐 38 min"], ["📖 John 17 · Matthew 6"]],
+        notesTag: "Sermon Notes · Apr 2025",
+        notes: ["Prayer is not a ritual — it is relationship with the Father","Jesus modeled surrender: 'not my will but yours'","The Lord's Prayer is a blueprint, not a script","Key verse: John 17:1 — 'Father, the hour has come'"],
+        thumbLabel: "Sermon 02 · Video"
+      },
+      {
+        img: "https://img.youtube.com/vi/GI64CPsn2V4/hqdefault.jpg",
+        tag: "Sermon 03 · Mar 2025", title: "The Upsidedown Kingdom",
+        desc: "Two ways, two trees, two voices, two foundations — every verse invites us to choose what kind of disciples we will be.",
+        meta: [["🕐 45 min"], ["📖 Matthew 5 · Luke 6"]],
+        notesTag: "Sermon Notes · Mar 2025",
+        notes: ["The Kingdom of God flips every worldly value upside down","Blessed are the poor in spirit — strength is found in humility","Two foundations: one built on sand, one on rock","Key verse: Matthew 5:3 — 'Blessed are the poor in spirit'"],
+        thumbLabel: "Sermon 03 · Video"
+      }
+    ];
+
+    function selectSermon(idx) {
+      const s = sermons[idx];
+      document.getElementById('mainImg').src = s.img;
+      document.getElementById('videoTag').textContent = s.tag;
+      document.getElementById('videoTitle').textContent = s.title;
+      document.getElementById('videoDesc').textContent = s.desc;
+      document.getElementById('videoMeta').innerHTML = s.meta.map(m => `<span>${m}</span>`).join('');
+      // document.getElementById('videoThumbLabel').textContent = s.thumbLabel;
+      document.getElementById('notesTag').textContent = s.notesTag;
+      document.getElementById('notesTitle').textContent = s.title;
+      document.getElementById('notesList').innerHTML = s.notes.map(n => `<li>${n}</li>`).join('');
+      document.querySelectorAll('.s-card').forEach((c, i) => c.classList.toggle('active', i === idx));
+      document.getElementById('mainCards').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+</script>
     
+@* <script>
+    (function(){
+      const track = document.getElementById('track');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const dotsEl = document.getElementById('dots');
+
+      const cards = track.querySelectorAll('.ws-card');
+      const total = cards.length;
+      const visible = 3;
+      const step = 304;
+      const maxIndex = total - visible;
+      let current = 0;
+
+      const numDots = Math.ceil(total / visible);
+      for(let i = 0; i < numDots; i++){
+        const d = document.createElement('button');
+        d.className = 'dot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', 'Go to slide ' + (i+1));
+        d.addEventListener('click', () => goTo(i * visible));
+        dotsEl.appendChild(d);
+      }
+
+      function updateDots(){
+        const activeDot = Math.floor(current / visible);
+        dotsEl.querySelectorAll('.dot').forEach((d, i) => {
+          d.classList.toggle('active', i === activeDot);
+        });
+      }
+
+      function goTo(idx){
+        current = Math.max(0, Math.min(idx, maxIndex));
+        track.style.transform = 'translateX(-' + (current * step) + 'px)';
+        prevBtn.disabled = current === 0;
+        nextBtn.disabled = current >= maxIndex;
+        updateDots();
+      }
+
+      prevBtn.addEventListener('click', () => goTo(current - visible));
+      nextBtn.addEventListener('click', () => goTo(current + visible));
+
+      updateDots();
+    })();
+</script> *@
+
     
 
 

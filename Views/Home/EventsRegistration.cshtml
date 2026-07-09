@@ -1,0 +1,332 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+    Layout = "~/Views/Shared/_HeaderLayout.cshtml";
+}
+
+
+
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: #f4f4f4;
+    }
+
+    /* HEADER */
+    .header {
+        background: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+        font-weight: 600;
+        color: #7a1522;
+        font-size: 18px;
+    }
+
+    .verse {
+        font-size: 13px;
+        color: #555;
+        text-align: right;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        background: linear-gradient(rgba(122,21,34,0.9), rgba(122,21,34,0.9)), url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 80px 20px 120px;
+    }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: auto;
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+    /* FORM CARD */
+    .form-container {
+        display: flex;
+        justify-content: center;
+        margin-top: -80px;
+        padding: 20px;
+    }
+
+    .form-card {
+        background: #ffffff;
+        width: 100%;
+        max-width: 600px;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    /* FORM ELEMENTS */
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    input, textarea, select {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 120px;
+        resize: none;
+    }
+
+    /* BUTTON */
+    .btn {
+        width: 100%;
+        background: #7a1522;
+        color: #ffffff;
+        padding: 14px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        .btn:hover {
+            background: #5e0f18;
+        }
+
+    /* FOOTER TEXT */
+    .footer-note {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 13px;
+        color: #777;
+    }
+
+    /* BOTTOM VERSE */
+    .bottom-verse {
+        text-align: center;
+        margin: 40px 20px;
+        color: #555;
+        font-size: 14px;
+    }
+
+    .dropdown {
+        width: 100%;
+        position: relative;
+    }
+
+    .dropdown-btn {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background: #fff;
+        cursor: pointer;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-top: 5px;
+        max-height: 220px;
+        overflow-y: auto;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+        .dropdown-content label {
+            display: block;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+            .dropdown-content label:hover {
+                background: #f3f3f3;
+            }
+
+    .show {
+        display: block;
+    }
+    .show input{
+            width: 15px;
+            margin-right: 10px;
+    }
+    .show label{
+        display:flex;
+    }
+
+    /* RESPONSIVE */
+    @@media (max-width: 768px) {
+
+        .header {
+            flex-direction: column;
+            text-align: center;
+            gap: 5px;
+        }
+
+        .hero {
+            padding: 60px 15px 100px;
+        }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+        .form-card {
+            padding: 20px;
+        }
+    }
+
+</style>
+
+
+
+
+<!-- HEADER -->
+@* <div class="header">
+        <div class="logo">Potters Church</div>
+        <div class="verse">
+            Call to me and I will answer you <br>
+            <strong>Jeremiah 33:3</strong>
+        </div>
+    </div> *@
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Upcoming Event's Registration</h1>
+    
+</div>
+
+<!-- FORM -->
+<div class="form-container">
+    <div class="form-card">
+
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+            <label>Mobile</label>
+            <input type="tel" placeholder="Enter your mobile number">
+        </div>
+
+        <div class="form-group">
+            <label>Address</label>
+            <input type="text" placeholder="Enter your address">
+        </div>
+        <div class="form-group">
+            <label>Upcoming Events</label>
+            <div class="dropdown">
+    
+                <button type="button" class="dropdown-btn" onclick="toggleDropdown()">
+                    Select Events
+                </button>
+
+                <div class="dropdown-content" id="dropdownContent">
+
+                    <label>
+                        <input type="checkbox" value="Baptism Classes">
+                        Baptism Classes
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Membership Classes">
+                        Membership Classes
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Fasting Prayer">
+                        Fasting Prayer
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Friends & Family Sunday">
+                        Friends & Family Sunday
+                    </label>
+
+                   
+
+                </div>
+            </div>
+        </div>
+
+        
+
+         
+        <div class="form-group">
+            <label>Why do you want to join</label>
+            <textarea placeholder="Write your prayer request here..."></textarea>
+        </div>
+
+        <button class="btn">Submit </button>
+
+        <div class="footer-note">
+            Your information is safe with us and will be kept confidential.
+        </div>
+
+    </div>
+</div>
+
+<!-- BOTTOM VERSE -->
+<div class="bottom-verse">
+    Be joyful in hope, patient in affliction, faithful in prayer.<br>
+    <strong>Romans 12:12</strong>
+</div>
+
+<script>
+    function toggleDropdown() {
+        document.getElementById("dropdownContent")
+            .classList.toggle("show");
+    }
+
+    // Close dropdown when clicking outside
+        window.onclick = function(e) {
+
+        const dropdown = document.getElementById("dropdownContent");
+        const button = document.querySelector(".dropdown-btn");
+
+        // Close only if clicked completely outside dropdown
+        if (!dropdown.contains(e.target) && !button.contains(e.target)) {
+            dropdown.classList.remove("show");
+        }
+    }
+</script>
