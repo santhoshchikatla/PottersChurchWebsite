@@ -1,4 +1,4 @@
-﻿
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -794,3 +794,343 @@ footer {
     }
 
 
+/* ══════════════════════════════════════════════════
+   LOCATION GRID — replaces inline style on #location
+   ══════════════════════════════════════════════════ */
+.location-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 80px 40px;
+}
+
+/* ══════════════════════════════════════════════════
+   YOUTH SECTION — replaces inline style on #youth
+   ══════════════════════════════════════════════════ */
+.youth-section {
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+}
+
+/* ══════════════════════════════════════════════════
+   VIDEO THUMBNAIL — replaces inline width/margin
+   ══════════════════════════════════════════════════ */
+.video-thumbnail-img {
+    max-width: 58%;
+    width: 49%;
+    margin: auto;
+    display: block;
+}
+
+/* ══════════════════════════════════════════════════
+   MOBILE RESPONSIVE — Sunday Page
+   Breakpoints: 768px (tablet), 480px (phone), 360px (small)
+   ══════════════════════════════════════════════════ */
+
+/* ── Tablet (≤ 768px) ── */
+@media (max-width: 768px) {
+
+    /* Hero */
+    .hero {
+        min-height: 70vh;
+    }
+
+    /* Hero background image — always cover on mobile */
+    .hero-bg {
+        background-size: cover !important;
+        background-position: center top !important;
+        background-attachment: scroll !important;
+    }
+
+    .hero h1 {
+        font-size: clamp(36px, 9vw, 56px);
+    }
+
+    .hero-sub {
+        font-size: 16px;
+    }
+
+    .hero-time {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+
+    /* Youth background image — cover on mobile */
+    .youth-bg {
+        background-size: cover !important;
+        background-position: center center !important;
+        background-attachment: scroll !important;
+    }
+
+    /* Sub-nav */
+    .subnav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .subnav a {
+        padding: 14px 18px;
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    /* Section generic */
+    section {
+        padding: 60px 24px;
+    }
+
+    /* Location grid — single column */
+    .location-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 60px 24px;
+    }
+
+    /* Video section */
+    .video-section {
+        padding: 60px 20px;
+    }
+
+    .video-thumbnail-img {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    /* Kids */
+    .kids-logo-area {
+        padding: 40px 20px 30px;
+    }
+
+    .kids-logo-img {
+        width: 70%;
+        max-width: 280px;
+    }
+
+    /* Youth */
+    .youth-section {
+        min-height: 360px;
+    }
+
+    .youth-content {
+        padding: 60px 32px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 40px 20px 20px;
+    }
+
+    /* Prevent horizontal overflow */
+    .video-wrap img,
+    .location-img,
+    .kids-logo-img,
+    .kid-col img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .video-section,
+    .kids-logo-area,
+    .kids-columns,
+    .youth-section,
+    .location-grid {
+        overflow-x: hidden;
+    }
+}
+
+/* ── Phone (≤ 480px) ── */
+@media (max-width: 480px) {
+
+    /* Hero */
+    .hero {
+        min-height: 85vh;
+    }
+
+    /* Hero bg — cover + scroll on phones (iOS Safari fix) */
+    .hero-bg {
+        background-size: cover !important;
+        background-position: center 20% !important;
+        background-attachment: scroll !important;
+    }
+
+    .hero-content {
+        padding: 0 16px;
+    }
+
+    .hero h1 {
+        font-size: clamp(32px, 10vw, 48px);
+        line-height: 1.1;
+    }
+
+    .hero-eyebrow {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .hero-sub {
+        font-size: 14px;
+        margin-bottom: 28px;
+    }
+
+    .hero-time {
+        font-size: 13px;
+        padding: 10px 18px;
+        letter-spacing: 0.5px;
+    }
+
+    /* Sub-nav */
+    .subnav a {
+        padding: 12px 14px;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    /* Location */
+    .location-grid {
+        padding: 40px 16px;
+        gap: 24px;
+    }
+
+    .section-title {
+        font-size: clamp(24px, 7vw, 36px);
+    }
+
+    .address-block {
+        padding: 16px 18px;
+        font-size: 14px;
+    }
+
+    .address-block strong {
+        font-size: 16px;
+    }
+
+    /* Get Directions button — full width */
+    .btn-primary {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 14px 20px;
+        box-sizing: border-box;
+    }
+
+    /* Video section */
+    .video-section {
+        padding: 48px 16px;
+    }
+
+    .video-section p {
+        font-size: 14px;
+    }
+
+    .video-wrap {
+        max-width: 100%;
+        border-radius: 4px;
+    }
+
+    .video-thumbnail-img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .play-btn-overlay {
+        justify-content: center;
+    }
+
+    /* Kids */
+    .kids-logo-area {
+        padding: 32px 16px 24px;
+    }
+
+    .kids-logo-img {
+        width: 80%;
+        max-width: 220px;
+    }
+
+    .kid-col {
+        padding: 36px 20px 0;
+    }
+
+    .kid-col h3 {
+        font-size: 22px;
+    }
+
+    .kid-col img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Youth */
+    .youth-section {
+        min-height: 320px;
+    }
+
+    .youth-content {
+        padding: 40px 20px;
+    }
+
+    .youth-content h2 {
+        font-size: clamp(24px, 7vw, 36px);
+    }
+
+    .youth-content p {
+        font-size: 15px;
+    }
+
+    .grade-badge {
+        font-size: 11px;
+        padding: 6px 16px;
+    }
+
+    /* Section labels */
+    .section-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+}
+
+/* ── Small Phone (≤ 360px) ── */
+@media (max-width: 360px) {
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-time {
+        font-size: 12px;
+        padding: 9px 14px;
+    }
+
+    .subnav a {
+        padding: 10px 10px;
+        font-size: 9px;
+        letter-spacing: 0.8px;
+    }
+
+    .location-grid {
+        padding: 32px 12px;
+    }
+
+    .video-section {
+        padding: 36px 12px;
+    }
+
+    .kid-col {
+        padding: 28px 14px 0;
+    }
+
+    .youth-content {
+        padding: 32px 14px;
+    }
+
+    .youth-content h2 {
+        font-size: 22px;
+    }
+}

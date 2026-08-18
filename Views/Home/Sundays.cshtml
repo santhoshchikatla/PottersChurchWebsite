@@ -1,4 +1,4 @@
-﻿@{
+@{
     ViewData["Title"] = "Welcome";
     Layout = "~/Views/Shared/_HeaderLayout.cshtml";
 }
@@ -15,11 +15,15 @@
 
     } */
     .hero-bg {
-    position: absolute;
-    inset: 0;
+        position: absolute;
+        inset: 0;
         background-image: url('../images/sundaybackground.png') !important;
-    opacity: 0.8;
-}
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important;
+        opacity: 0.8;
+    }
 </style>
 
 
@@ -49,7 +53,7 @@
 
 <!-- LOCATION -->
 <div style="background: var(--off-white);">
-    <div id="location" style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:80px 40px;">
+    <div id="location" class="location-grid">
         <div>
             <span class="section-label">Location &amp; Time</span>
             <h2 class="section-title">Sundays at<br> 8:00am , 10:30am & 6:00pm</h2>
@@ -86,8 +90,7 @@
 
     <a class="video-wrap" target="_blank" href="https://www.youtube.com/watch?v=bjcLdgfSiMo">
                             
-        <img src="https://img.youtube.com/vi/bjcLdgfSiMo/maxresdefault.jpg" style="max-width: 58%;
-        margin: auto;width: 49%;"
+        <img src="https://img.youtube.com/vi/bjcLdgfSiMo/maxresdefault.jpg" class="video-thumbnail-img"
              alt="Plan Your Visit" />
 									
         <div style="justify-content: flex-start" class="play-btn-overlay">
@@ -195,7 +198,7 @@
 </div>
 
 <!-- YOUTH -->
-<section  id="youth" style="margin-top:100px;position:relative;overflow:hidden;min-height:500px;display:flex;align-items:center;padding:0;">
+<section id="youth" class="youth-section">
     <div class="youth-bg"></div>
     <div class="youth-content">
         <div class="grade-badge">6th – 12th Grade</div>
@@ -247,9 +250,15 @@
       if (!isOpen) item.classList.add('open');
     }
 
+    // Scroll-spy: derive sections from the actual subnav links so
+    // commented-out sections (#more) never cause index mismatches.
     const subnav = document.querySelector('.subnav');
-    const links = subnav.querySelectorAll('a');
-    const sections = ['location','kids','youth','more'].map(id => document.getElementById(id));
+    const links = Array.from(subnav.querySelectorAll('a'));
+    const sections = links.map(link => {
+      const id = link.getAttribute('href').replace('#', '');
+      return document.getElementById(id); // null if section doesn't exist
+    });
+
     window.addEventListener('scroll', () => {
       let current = 0;
       sections.forEach((s, i) => {
