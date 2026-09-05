@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --red: #C0392B;
     --dark: #0f0e0e;
     --cream: #f5f4f0;
@@ -14,14 +14,14 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .bs-index-item {
     flex: 1;
     text-align: center;
     padding: 18px 12px;
-    border-right: 1px solid rgba(255,255,255,0.06);
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
     cursor: pointer;
     transition: background 0.2s;
     display: flex;
@@ -30,16 +30,16 @@
     gap: 4px;
 }
 
-    .bs-index-item:last-child {
-        border-right: none;
-    }
+.bs-index-item:last-child {
+    border-right: none;
+}
 
-    .bs-index-item:hover {
-        background: rgba(255,255,255,0.05);
-    }
+.bs-index-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
 
 .bs-index-num {
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 22px;
     font-weight: 900;
     color: var(--red);
@@ -67,29 +67,29 @@
     overflow: hidden;
 }
 
-    .p1-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        opacity: .75;
-        filter: contrast(1.05);
-    }
+.p1-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: .75;
+    filter: contrast(1.05);
+}
 
 .p1-img-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(105deg,transparent 50%,var(--dark) 95%);
+    background: linear-gradient(105deg, transparent 50%, var(--dark) 95%);
 }
 
 .p1-ghost {
     position: absolute;
     bottom: -30px;
     left: -8px;
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 260px;
     font-weight: 900;
-    color: rgba(255,255,255,0.03);
+    color: rgba(255, 255, 255, 0.03);
     line-height: 1;
     pointer-events: none;
     user-select: none;
@@ -114,17 +114,17 @@
     gap: 10px;
 }
 
-    .p1-eyebrow::before {
-        content: '';
-        display: inline-block;
-        width: 28px;
-        height: 2px;
-        background: var(--red);
-    }
+.p1-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 2px;
+    background: var(--red);
+}
 
 .p1-loc {
-    font-family: 'Barlow Condensed',sans-serif;
-    font-size: clamp(56px,7vw,96px);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(56px, 7vw, 96px);
     font-weight: 900;
     color: #fff;
     text-transform: uppercase;
@@ -133,10 +133,10 @@
     margin-bottom: 24px;
 }
 
-    .p1-loc em {
-        color: var(--red);
-        font-style: normal;
-    }
+.p1-loc em {
+    color: var(--red);
+    font-style: normal;
+}
 
 .p1-rule {
     width: 48px;
@@ -155,7 +155,7 @@
 }
 
 .p1-time {
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 38px;
     font-weight: 700;
     color: #fff;
@@ -187,18 +187,18 @@
     line-height: 1.5;
 }
 
-    .p1-meta-row i {
-        color: var(--red);
-        font-size: 15px;
-        margin-top: 1px;
-        flex-shrink: 0;
-    }
+.p1-meta-row i {
+    color: var(--red);
+    font-size: 15px;
+    margin-top: 1px;
+    flex-shrink: 0;
+}
 
 .p1-btn {
     display: inline-block;
     background: var(--red);
     color: #fff;
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
     font-size: 11px;
     letter-spacing: 2.5px;
@@ -210,9 +210,9 @@
     width: fit-content;
 }
 
-    .p1-btn:hover {
-        background: #a93226;
-    }
+.p1-btn:hover {
+    background: #a93226;
+}
 
 /* ── PAGE 2 — BACHUPALLY ── */
 .p2 {
@@ -226,28 +226,28 @@
     overflow: hidden;
 }
 
-    .p2-hero img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        object-position: center 30%;
-    }
+.p2-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: center 30%;
+}
 
 .p2-hero-ov {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom,rgba(15,14,14,.15) 0%,rgba(15,14,14,.82) 100%);
+    background: linear-gradient(to bottom, rgba(15, 14, 14, .15) 0%, rgba(15, 14, 14, .82) 100%);
 }
 
 .p2-ghost {
     position: absolute;
     top: 10px;
     right: 32px;
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 180px;
     font-weight: 900;
-    color: rgba(255,255,255,0.05);
+    color: rgba(255, 255, 255, 0.05);
     line-height: 1;
     pointer-events: none;
 }
@@ -264,7 +264,7 @@
     display: inline-block;
     border: 1.5px solid var(--red);
     color: var(--red);
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 2.5px;
@@ -274,8 +274,8 @@
 }
 
 .p2-loc {
-    font-family: 'Barlow Condensed',sans-serif;
-    font-size: clamp(44px,6vw,80px);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(44px, 6vw, 80px);
     font-weight: 900;
     color: #fff;
     text-transform: uppercase;
@@ -283,10 +283,10 @@
     line-height: .88;
 }
 
-    .p2-loc em {
-        color: var(--red);
-        font-style: normal;
-    }
+.p2-loc em {
+    color: var(--red);
+    font-style: normal;
+}
 
 .p2-body {
     display: grid;
@@ -309,7 +309,7 @@
 }
 
 .p2-time-big {
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 44px;
     font-weight: 900;
     color: var(--dark);
@@ -379,7 +379,7 @@
 }
 
 .p3-strip-t {
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 3px;
@@ -388,9 +388,9 @@
 }
 
 .p3-strip-n {
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 12px;
-    color: rgba(255,255,255,.4);
+    color: rgba(255, 255, 255, .4);
     letter-spacing: 2px;
 }
 
@@ -418,8 +418,8 @@
 }
 
 .p3-loc {
-    font-family: 'Barlow Condensed',sans-serif;
-    font-size: clamp(48px,5.5vw,80px);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(48px, 5.5vw, 80px);
     font-weight: 900;
     color: var(--dark);
     text-transform: uppercase;
@@ -443,7 +443,7 @@
 }
 
 .p3-tv {
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 42px;
     font-weight: 900;
     color: var(--dark);
@@ -488,53 +488,53 @@
     line-height: 1.5;
 }
 
-    .p3-dr i {
-        color: var(--red);
-        font-size: 15px;
-        margin-top: 1px;
-        width: 18px;
-        flex-shrink: 0;
-    }
+.p3-dr i {
+    color: var(--red);
+    font-size: 15px;
+    margin-top: 1px;
+    width: 18px;
+    flex-shrink: 0;
+}
 
 .p3-img-col {
     position: relative;
     overflow: hidden;
 }
 
-    .p3-img-col img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        min-height: 500px;
-    }
+.p3-img-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 500px;
+}
 
 .p3-img-cap {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(15,14,14,.88);
+    background: rgba(15, 14, 14, .88);
     padding: 18px 28px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-    .p3-img-cap span {
-        font-size: 10px;
-        font-weight: 700;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: #fff;
-    }
+.p3-img-cap span {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}
 
-    .p3-img-cap em {
-        font-style: normal;
-        font-size: 10px;
-        color: var(--red);
-        letter-spacing: 1px;
-    }
+.p3-img-cap em {
+    font-style: normal;
+    font-size: 10px;
+    color: var(--red);
+    letter-spacing: 1px;
+}
 
 /* ── PAGE 4 — B.N. REDDY ── */
 .p4 {
@@ -547,7 +547,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(255,255,255,.07);
+    border-bottom: 1px solid rgba(255, 255, 255, .07);
 }
 
 .p4-hl {
@@ -557,7 +557,7 @@
 }
 
 .p4-bignum {
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 84px;
     font-weight: 900;
     color: var(--red);
@@ -574,7 +574,7 @@
 }
 
 .p4-htitle {
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -598,8 +598,8 @@
 }
 
 .p4-loc {
-    font-family: 'Barlow Condensed',sans-serif;
-    font-size: clamp(52px,6.5vw,92px);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(52px, 6.5vw, 92px);
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: -2px;
@@ -607,10 +607,10 @@
     margin-bottom: 22px;
 }
 
-    .p4-loc em {
-        color: var(--red);
-        font-style: normal;
-    }
+.p4-loc em {
+    color: var(--red);
+    font-style: normal;
+}
 
 .p4-intro {
     font-size: 14px;
@@ -639,7 +639,7 @@
 
 .p4-sidebar {
     padding-left: 48px;
-    border-left: 1px solid rgba(255,255,255,.06);
+    border-left: 1px solid rgba(255, 255, 255, .06);
 }
 
 .p4-sb {
@@ -656,7 +656,7 @@
 }
 
 .p4-stime {
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 40px;
     font-weight: 900;
     color: #fff;
@@ -672,7 +672,7 @@
 .p4-srule {
     width: 100%;
     height: 1px;
-    background: rgba(255,255,255,.06);
+    background: rgba(255, 255, 255, .06);
     margin: 24px 0;
 }
 
@@ -682,12 +682,12 @@
     line-height: 1.85;
 }
 
-    .p4-saddr strong {
-        color: #ccc;
-        font-weight: 600;
-        display: block;
-        margin-bottom: 2px;
-    }
+.p4-saddr strong {
+    color: #ccc;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2px;
+}
 
 .p4-list {
     display: flex;
@@ -702,25 +702,25 @@
     font-size: 12px;
     color: #555;
     padding: 9px 0;
-    border-bottom: 1px solid rgba(255,255,255,.04);
+    border-bottom: 1px solid rgba(255, 255, 255, .04);
 }
 
-    .p4-list-item:last-child {
-        border-bottom: none;
-    }
+.p4-list-item:last-child {
+    border-bottom: none;
+}
 
-    .p4-list-item i {
-        color: var(--red);
-        font-size: 14px;
-        flex-shrink: 0;
-    }
+.p4-list-item i {
+    color: var(--red);
+    font-size: 14px;
+    flex-shrink: 0;
+}
 
 .p4-join {
     display: inline-block;
     margin-top: 28px;
     background: var(--red);
     color: #fff;
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
     font-size: 11px;
     letter-spacing: 2.5px;
@@ -731,9 +731,9 @@
     transition: background .2s;
 }
 
-    .p4-join:hover {
-        background: #a93226;
-    }
+.p4-join:hover {
+    background: #a93226;
+}
 
 /* ── SEPARATOR ── */
 .sep {
@@ -759,12 +759,16 @@
 }
 
 @media(max-width:640px) {
-    .p1, .p3-inner, .p4-body {
+
+    .p1,
+    .p3-inner,
+    .p4-body {
         grid-template-columns: 1fr;
     }
 
     .p1-img {
-        height: 45vh;
+        height: 100vh;
+        min-height: 280px;
     }
 
     .p2-body {
@@ -775,24 +779,499 @@
         height: 280px;
     }
 
-        .p3-img-col img {
-            min-height: 280px;
-        }
+    .p3-img-col img {
+        min-height: 280px;
+    }
 
     .p4-sidebar {
         padding-left: 0;
         border-left: none;
         padding-top: 32px;
         margin-top: 32px;
-        border-top: 1px solid rgba(255,255,255,.06);
+        border-top: 1px solid rgba(255, 255, 255, .06);
     }
 
-    .p1-content, .p2-info, .p2-side, .p3-content, .p4-body, .p4-header, .p3-strip, .bs-index {
+    .p1-content,
+    .p2-info,
+    .p2-side,
+    .p3-content,
+    .p4-body,
+    .p4-header,
+    .p3-strip,
+    .bs-index {
         padding-left: 20px;
         padding-right: 20px;
     }
 
     .p2-hero-text {
         padding: 28px 20px;
+    }
+}
+
+
+/* ══════════════════════════════════════════════════════════════════
+   BIBLESTUDY — MOBILE-ONLY RESPONSIVE OVERRIDES
+   Appended below all desktop CSS — desktop styles remain untouched.
+   Breakpoints: 768px · 480px · 390px
+   ══════════════════════════════════════════════════════════════════ */
+
+
+/* ─────────────────────────────────────────
+   768px — tablet-portrait & large phones
+   ───────────────────────────────────────── */
+@media (max-width: 768px) {
+
+    /* ── INDEX NAV ── */
+    /* Allow the 4-tab strip to scroll horizontally if it overflows */
+    .bs-index {
+        padding: 0 16px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .bs-index::-webkit-scrollbar {
+        display: none;
+        /* Chrome/Safari */
+    }
+
+    .bs-index-item {
+        flex: 0 0 auto;
+        /* don't shrink — let each tab be its natural width */
+        min-width: 72px;
+        padding: 14px 16px;
+        min-height: 44px;
+        justify-content: center;
+    }
+
+    .bs-index-num {
+        font-size: 18px;
+    }
+
+    .bs-index-name {
+        font-size: 8px;
+        letter-spacing: 1.8px;
+    }
+
+    /* ══ PAGE 1 — KPHB ══ */
+    .p1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: unset;
+    }
+
+    .p1-img {
+        height: 100vh;
+        /* fill full viewport so image covers the screen */
+        min-height: 280px;
+    }
+
+    .p1-img img {
+        width: 100%;
+        height: 100%;
+        /* img already has height:100% — container now tells it how tall */
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    /* Tame the giant ghost text so it doesn't break layout */
+    .p1-ghost {
+        font-size: clamp(80px, 22vw, 160px);
+        bottom: -10px;
+        left: -4px;
+    }
+
+    .p1-content {
+        padding: 40px 20px 48px;
+    }
+
+    .p1-loc {
+        font-size: clamp(52px, 14vw, 80px);
+        letter-spacing: -1px;
+    }
+
+    .p1-time {
+        font-size: clamp(26px, 7vw, 38px);
+    }
+
+    .p1-desc {
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+
+    /* Touch-friendly CTA */
+    .p1-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 44px;
+        padding: 13px 24px;
+        font-size: 0.75rem;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* ══ PAGE 2 — MEDIPALLY ══ */
+    .p2-hero {
+        height: 40vh;
+        min-height: 200px;
+    }
+
+    .p2-ghost {
+        font-size: clamp(60px, 20vw, 120px);
+        right: 16px;
+    }
+
+    .p2-hero-text {
+        padding: 24px 16px;
+    }
+
+    .p2-loc {
+        font-size: clamp(40px, 11vw, 68px);
+        letter-spacing: -1px;
+    }
+
+    .p2-body {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .p2-info {
+        padding: 36px 20px;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .p2-time-big {
+        font-size: clamp(28px, 8vw, 44px);
+    }
+
+    .p2-side {
+        padding: 32px 20px;
+        gap: 20px;
+    }
+
+    .p2-img2 {
+        width: 100%;
+        height: auto;
+        max-height: 180px;
+        object-fit: cover;
+    }
+
+    /* ══ SEPARATOR ══ */
+    .sep-lbl {
+        padding: 14px 20px;
+        font-size: 8px;
+        letter-spacing: 2.5px;
+    }
+
+    /* ══ PAGE 3 — B.N. REDDY NAGAR ══ */
+    .p3-strip {
+        padding: 12px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+
+    .p3-strip-t,
+    .p3-strip-n {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .p3-inner {
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: unset;
+    }
+
+    .p3-content {
+        padding: 36px 20px;
+        border-right: none;
+    }
+
+    /* p3 uses .p4-loc class for the heading */
+    .p3-content .p4-loc {
+        font-size: clamp(48px, 13vw, 80px);
+        letter-spacing: -1px;
+    }
+
+    .p3-tv {
+        font-size: clamp(28px, 8vw, 42px);
+    }
+
+    .p3-desc {
+        max-width: 100%;
+        font-size: 0.88rem;
+    }
+
+    .p3-img-col {
+        height: 260px;
+        order: -1;
+        /* show image above content on mobile */
+    }
+
+    .p3-img-col img {
+        min-height: 260px;
+    }
+
+    .p3-img-cap {
+        padding: 12px 16px;
+    }
+
+    /* ══ PAGE 4 — BACHUPALLY ══ */
+    .p4-header {
+        padding: 32px 20px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, .07);
+    }
+
+    .p4-bignum {
+        font-size: clamp(52px, 14vw, 84px);
+        line-height: 1;
+    }
+
+    .p4-hr {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+
+    .p4-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 32px 20px 48px;
+        gap: 32px;
+        align-items: start;
+    }
+
+    /* p4 reuses .p2-loc for the heading */
+    .p4-body .p2-loc {
+        font-size: clamp(44px, 12vw, 72px);
+        letter-spacing: -1px;
+    }
+
+    .p4-intro {
+        max-width: 100%;
+        font-size: 0.88rem;
+    }
+
+    .p4-img-main {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .p4-sidebar {
+        padding-left: 0;
+        border-left: none;
+        padding-top: 0;
+        margin-top: 0;
+        border-top: 1px solid rgba(255, 255, 255, .06);
+        padding-top: 28px;
+    }
+
+    .p4-stime {
+        font-size: clamp(28px, 8vw, 40px);
+    }
+
+    .p4-list-item {
+        min-height: 44px;
+        font-size: 0.82rem;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    /* Full-width touch-friendly join button */
+    .p4-join {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 44px;
+        margin-top: 24px;
+        padding: 13px 24px;
+        font-size: 0.75rem;
+        box-sizing: border-box;
+    }
+}
+
+
+/* ─────────────────────────────────────────
+   480px — compact phones (iPhone SE, etc.)
+   ───────────────────────────────────────── */
+@media (max-width: 480px) {
+
+    /* INDEX NAV: compress further */
+    .bs-index-item {
+        min-width: 60px;
+        padding: 12px 10px;
+    }
+
+    .bs-index-num {
+        font-size: 16px;
+    }
+
+    /* KPHB */
+    .p1-img {
+        height: 79vh;
+        min-height: 180px;
+    }
+
+    .p1-content {
+        padding: 32px 16px 40px;
+    }
+
+    .p1-loc {
+        font-size: clamp(46px, 15vw, 70px);
+    }
+
+    .p1-eyebrow {
+        font-size: 9px;
+        letter-spacing: 2.5px;
+    }
+
+    /* Medipally */
+    .p2-hero {
+        height: 34vh;
+        min-height: 180px;
+    }
+
+    .p2-loc {
+        font-size: clamp(36px, 12vw, 60px);
+    }
+
+    .p2-info,
+    .p2-side {
+        padding: 28px 16px;
+    }
+
+    .p2-time-big {
+        font-size: clamp(26px, 9vw, 40px);
+    }
+
+    /* B.N. Reddy / Page 3 */
+    .p3-content {
+        padding: 28px 16px;
+    }
+
+    .p3-img-col {
+        height: 220px;
+    }
+
+    .p3-img-col img {
+        min-height: 220px;
+    }
+
+    .p3-strip {
+        padding: 10px 16px;
+    }
+
+    /* Bachupally / Page 4 */
+    .p4-header {
+        padding: 24px 16px 16px;
+    }
+
+    .p4-body {
+        padding: 24px 16px 40px;
+    }
+
+    .p4-img-main {
+        height: 180px;
+    }
+
+    .p4-sidebar {
+        padding-top: 24px;
+    }
+}
+
+
+/* ─────────────────────────────────────────
+   390px / 360px — very narrow phones
+   ───────────────────────────────────────── */
+@media (max-width: 390px) {
+
+    /* INDEX NAV: tightest view */
+    .bs-index-item {
+        min-width: 54px;
+        padding: 10px 8px;
+        gap: 3px;
+    }
+
+    .bs-index-num {
+        font-size: 15px;
+    }
+
+    .bs-index-name {
+        font-size: 7px;
+        letter-spacing: 1.2px;
+    }
+
+    /* KPHB */
+    .p1-loc {
+        font-size: clamp(40px, 16vw, 64px);
+        letter-spacing: -0.5px;
+    }
+
+    .p1-time {
+        font-size: clamp(22px, 8vw, 32px);
+    }
+
+    .p1-ghost {
+        font-size: clamp(60px, 20vw, 100px);
+    }
+
+    /* Medipally */
+    .p2-loc {
+        font-size: clamp(32px, 13vw, 54px);
+    }
+
+    .p2-ghost {
+        font-size: clamp(50px, 18vw, 90px);
+    }
+
+    .p2-time-big {
+        font-size: clamp(24px, 9vw, 36px);
+    }
+
+    /* B.N. Reddy */
+    .p3-content .p4-loc {
+        font-size: clamp(40px, 14vw, 66px);
+    }
+
+    .p3-tv {
+        font-size: clamp(24px, 8.5vw, 36px);
+    }
+
+    /* Bachupally */
+    .p4-bignum {
+        font-size: clamp(44px, 15vw, 70px);
+    }
+
+    .p4-body .p2-loc {
+        font-size: clamp(38px, 13vw, 60px);
+    }
+
+    .p4-stime {
+        font-size: clamp(26px, 9vw, 36px);
+    }
+
+    /* Meta rows — ensure icon + text wrap cleanly */
+    .p1-meta-row,
+    .p3-dr {
+        font-size: 12px;
+        gap: 8px;
+        line-height: 1.55;
+    }
+
+    /* Buttons */
+    .p1-btn,
+    .p4-join {
+        font-size: 0.7rem;
+        padding: 12px 18px;
+        letter-spacing: 2px;
     }
 }

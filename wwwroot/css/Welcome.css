@@ -1,4 +1,4 @@
-﻿
+
 :root {
     --red: #a71e30;
     --red-dark: #7a1522;
@@ -975,3 +975,402 @@ select {
         padding: 20px 18px;
     }
 }
+
+
+/* ══════════════════════════════════════════════════════════════════
+   WELCOME PAGE — MOBILE-ONLY RESPONSIVE OVERRIDES
+   Appended below all desktop CSS — desktop styles remain untouched.
+   Breakpoints: 768px · 480px · 390px
+   ══════════════════════════════════════════════════════════════════ */
+
+
+/* ─────────────────────────────────────────
+   768px — tablet-portrait & large phones
+   ───────────────────────────────────────── */
+@media (max-width: 768px) {
+
+    /* ── HERO ── */
+    .hero {
+        min-height: 100svh;         /* use small viewport height to avoid mobile address-bar jump */
+        align-items: flex-start;
+        padding-top: 64px;
+    }
+
+    .hero-content {
+        padding: 40px 20px 52px;
+        width: 100%;
+    }
+
+    .logo-pill {
+        margin-bottom: 24px;
+        font-size: .8rem;
+    }
+
+    .logo-pill span {
+        font-size: .78rem;
+        letter-spacing: .04em;
+    }
+
+    .welcome-tag {
+        font-size: .65rem;
+        letter-spacing: .14em;
+        margin-bottom: 16px;
+    }
+
+    .hero-title {
+        font-size: clamp(3rem, 18vw, 6rem);
+        line-height: .95;
+        letter-spacing: .02em;
+    }
+
+    .hero-sub {
+        font-size: clamp(.9rem, 3.5vw, 1.15rem);
+        margin: 16px auto 32px;
+        max-width: 100%;
+    }
+
+    /* CTA buttons: full-width column stack */
+    .hero-cta {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .btn-gold,
+    .btn-outline-white {
+        width: 100%;
+        min-height: 44px;
+        padding: 14px 20px;
+        text-align: center;
+        font-size: .88rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    /* Service pills: stack to single column */
+    .hero-service {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        margin-top: 36px;
+    }
+
+    .service-pill {
+        width: 100%;
+        padding: 12px 18px;
+        border-radius: 10px;
+        min-height: 44px;
+    }
+
+    /* Contain decorative cross on mobile */
+    .hero-cross {
+        width: 260px;
+        height: 260px;
+        right: -40px;
+        opacity: .05;
+    }
+
+    /* ── TAB SECTION ── */
+    .tab-section {
+        padding: 44px 16px 56px;
+    }
+
+    /* Tabs: 4-col → 2x2 grid */
+    .tabs-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        margin-bottom: 28px;
+    }
+
+    .tab-btn {
+        padding: 14px 8px 12px;
+        border-radius: 12px;
+        min-height: 44px;
+    }
+
+    .tab-btn .tab-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
+    }
+
+    .tab-btn .tab-label {
+        font-size: .68rem;
+        letter-spacing: .05em;
+    }
+
+    .tab-btn .tab-sub {
+        font-size: .6rem;
+    }
+
+    /* Form card: full width on mobile */
+    .form-card {
+        max-width: 100%;
+        border-radius: 14px;
+        margin: 0;
+    }
+
+    .card-header {
+        padding: 20px 18px;
+        gap: 12px;
+    }
+
+    .card-header-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.3rem;
+    }
+
+    .card-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .card-header p {
+        font-size: .78rem;
+    }
+
+    .card-body {
+        padding: 22px 18px 28px;
+    }
+
+    /* Form rows: always single column */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-bottom: 0;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    /* Inputs: ensure comfortable touch target */
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    input[type=date],
+    input[type=number],
+    select,
+    textarea {
+        padding: 13px 14px;
+        font-size: .9rem;
+        min-height: 44px;
+        border-radius: 8px;
+    }
+
+    /* Checkbox grids: single column */
+    .check-grid-2 {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .check-item {
+        min-height: 44px;
+        padding: 10px 13px;
+        border-radius: 8px;
+    }
+
+    /* Radio pills: wrap naturally, ensure touch-target */
+    .radio-group {
+        gap: 8px;
+    }
+
+    .radio-pill {
+        min-height: 44px;
+        padding: 10px 14px;
+        font-size: .8rem;
+    }
+
+    /* Submit button: full-width, prominent touch target */
+    .submit-btn {
+        min-height: 48px;
+        font-size: .88rem;
+        padding: 14px 20px;
+        border-radius: 9px;
+        margin-top: 16px;
+    }
+
+    /* ── CONNECT SECTION ── */
+    .connect-section {
+        padding: 60px 16px;
+    }
+
+    .connect-card {
+        padding: 24px 20px;
+        border-radius: 12px;
+    }
+
+    .social-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-badge {
+        min-height: 44px;
+        padding: 10px 18px;
+        border-radius: 50px;
+        justify-content: center;
+    }
+
+    /* ── TOAST — reposition to bottom-centre on mobile ── */
+    .toast-wrap {
+        bottom: 16px;
+        right: 16px;
+        left: 16px;
+    }
+
+    .toast-box {
+        min-width: unset;
+        width: 100%;
+        border-radius: 10px;
+        padding: 16px 18px;
+    }
+}
+
+
+/* ─────────────────────────────────────────
+   480px — compact phones (iPhone SE, etc.)
+   ───────────────────────────────────────── */
+@media (max-width: 480px) {
+
+    /* Hero */
+    .hero-content {
+        padding: 32px 16px 44px;
+    }
+
+    .hero-title {
+        font-size: clamp(2.6rem, 20vw, 5rem);
+    }
+
+    .hero-sub {
+        font-size: clamp(.85rem, 4vw, 1.05rem);
+        margin: 12px auto 28px;
+    }
+
+    .logo-pill {
+        padding: 7px 16px;
+        font-size: .72rem;
+    }
+
+    /* Service pills */
+    .service-pill {
+        padding: 10px 16px;
+    }
+
+    .service-pill strong {
+        font-size: .88rem;
+    }
+
+    .service-pill small {
+        font-size: .72rem;
+    }
+
+    /* Tabs */
+    .tab-section {
+        padding: 36px 14px 48px;
+    }
+
+    .tab-btn {
+        padding: 12px 6px 10px;
+    }
+
+    .tab-btn .tab-label {
+        font-size: .62rem;
+    }
+
+    /* Section headings */
+    .section-title {
+        font-size: clamp(1.5rem, 7vw, 2.2rem);
+        margin-bottom: 24px;
+    }
+
+    /* Connect section */
+    .connect-section {
+        padding: 48px 14px;
+    }
+
+    .connect-card {
+        padding: 20px 16px;
+    }
+}
+
+
+/* ─────────────────────────────────────────
+   390px / 360px — very narrow phones
+   ───────────────────────────────────────── */
+@media (max-width: 390px) {
+
+    /* Hero */
+    .hero-title {
+        font-size: clamp(2.4rem, 22vw, 4.5rem);
+        letter-spacing: .01em;
+    }
+
+    .hero-sub {
+        font-size: .82rem;
+    }
+
+    .btn-gold,
+    .btn-outline-white {
+        font-size: .82rem;
+        padding: 13px 16px;
+    }
+
+    .logo-pill span {
+        font-size: .7rem;
+    }
+
+    /* Tabs */
+    .tabs-row {
+        gap: 6px;
+    }
+
+    .tab-btn .tab-icon {
+        width: 34px;
+        height: 34px;
+        font-size: 1rem;
+    }
+
+    .tab-btn .tab-label {
+        font-size: .58rem;
+    }
+
+    .tab-btn .tab-sub {
+        display: none;         /* hide sub-label on the smallest screens to prevent overflow */
+    }
+
+    /* Inputs */
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    input[type=date],
+    input[type=number],
+    select,
+    textarea {
+        font-size: .85rem;
+        padding: 11px 12px;
+    }
+
+    .submit-btn {
+        font-size: .82rem;
+        letter-spacing: .05em;
+    }
+
+    /* Radio pills: full-width */
+    .radio-pill {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    /* Section headings */
+    .section-title {
+        font-size: clamp(1.35rem, 8vw, 1.9rem);
+    }
+
+    /* Connect */
+    .connect-section {
+        padding: 40px 12px;
+    }
+}
